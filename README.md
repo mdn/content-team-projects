@@ -29,7 +29,7 @@ Our main projects for Q2 are as follows:
 ### Other
 
 - **Hiring:** We are hiring a full time technical writer, one with a substantial web development backgound.
-- **Content Strategy:** We'll be reviewing both MDN and the web platform to define the content work moving forward into the next quarter and beyond.
+- **Content Strategy:** We'll be reviewing both MDN and the web platform to define the content work moving forward into the next quarter and beyond. (Note to self include Interop)
 - **MDN Content Tools:** We have some internal tools which help to streamline the Firefox releases, see what's upcoming for the web platform and analytics to help us make descisions with regards to our users. We'll be updating and improving these.
 
 ## Projects on the roadmap past Q2
