@@ -10,9 +10,9 @@ tags:
 ---
 <{{MDNSidebar}}>
 
-Be aware that all contributions to MDN fall under specific open source licenses; these are [described in detail](/en-US/docs/MDN/About#copyrights_and_licenses) on our [About MDN](/en-US/docs/MDN/About) page.
+In this article, you'll find information about whether or not a given topic and/or type of content should be included on MDN.
 
-> **Note:** Keep in mind that Mozilla's [Websites & Communications Terms of Use](https://www.mozilla.org/en-US/about/legal/terms/mozilla/) are in effect when you use or contribute to MDN Web Docs. Review this document to ensure that you're aware of what can and cannot be posted on Mozilla sites.
+> **Note:** Be aware that all contributions to MDN fall under specific open source licenses; these are [described in detail](/en-US/docs/MDN/About#copyrights_and_licenses) on our [About MDN](/en-US/docs/MDN/About) page. Keep in mind that Mozilla's [Websites & Communications Terms of Use](https://www.mozilla.org/en-US/about/legal/terms/mozilla/) are in effect when you use or contribute to MDN. <!--- links need to be revisited--->
 
 ## Topics that belong on MDN
 
