@@ -29,7 +29,7 @@ Your presence on the project should be productive, and it shouldn’t stop other
 
 ## Be polite, be kind, avoid incendiary or offensive language
 
-We could abbreviate this to "be kind". This is our number one bit of advice for anyone starting open source contributions.
+We could abbreviate this to "be kind". This is our number one piece of advice for anyone starting open source contributions.
 
 Be kind to the other contributors on the project, and it will be a happier and more productive place. This includes:
 
