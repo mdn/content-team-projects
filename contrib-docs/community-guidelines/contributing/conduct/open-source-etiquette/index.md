@@ -49,7 +49,7 @@ You (and other contributors) should be here because you want to make a positive 
 
 You should therefore keep what you write on topic as much as possible, staying away from potential controversial off-topic subjects like religion or politics, and being supportive and respectful even if you disagree with someone, or don’t like a decision they’ve made.
 
-Also, you should refrain from any swearing / offensive language when communicating, even if it is not directed at anyone in particular. It is not needed for participation, and some people are really sensitive to it.
+Also, you should refrain from any swearing/offensive language when communicating, even if it is not directed at anyone in particular. It is not needed for participation, and people are sensitive to it.
 
 Be aware that there are rules in place in any good OSP to protect its contributors against being made to feel uncomfortable while contributing. This usually comes in the form of a CODE_OF_CONDUCT.md file on GitHub.
 
