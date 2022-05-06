@@ -4,6 +4,8 @@
 
 ## Ways to contribute
 
+[//]: # "TODO: Remember to update these links as we move the documentation around."
+
 - [Fixing MDN Web Docs content bugs](https://developer.mozilla.org/en-US/docs/MDN/Contribute/Fixing_MDN_content_bugs)
 - [Reviewing MDN Web Docs edits](https://github.com/mdn/content/blob/main/REVIEWING.md)
 - [Help beginners to learn on MDN Web Docs](https://developer.mozilla.org/en-US/docs/MDN/Contribute/Help_beginners)

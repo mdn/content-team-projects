@@ -12,6 +12,8 @@ This article acts as a quick guide to finding the different repos you need to ed
 - **Interactive examples**: <https://github.com/mdn/interactive-examples>. This repo stores the example code blocks that are found at the top of many of our reference pages ([example](/en-US/docs/Web/JavaScript/Reference/Global_Objects/globalThis)). Edit those examples here.
 - **Bob** aka Builder of Bits: <https://github.com/mdn/bob>
   This repo stores the rendering code that produce the nice editable, copyable examples found at the top of many of our reference pages ([example](/en-US/docs/Web/JavaScript/Reference/Global_Objects/globalThis)).
+- **Workflows**: <https://github.com/mdn/workflows>
+  A growing collection of reusable GitHub Actions for use on MDN Web Docs repositories.
 - **Translated content**: <https://github.com/mdn/translated-content>. This is where localized content lives. Go here if you want to help translate pages into any of our [actively maintained locales](https://github.com/mdn/translated-content#locales).
 - **CSS data**: <https://github.com/mdn/data>. Originally envisaged as a hold-all repo for general purpose MDN Web Docs data, the data repo now serves the purpose of holding data about CSS features such as formal syntax, inheritance, computed value, animation type, etc. This is used to generate sections on CSS reference pages such as formal definition ([example](/en-US/docs/Web/CSS/font-variant-caps#formal_definition)) and formal syntax ([example](/en-US/docs/Web/CSS/font-variant-caps#formal_syntax)).
 

@@ -6,7 +6,7 @@ Every part of MDN (docs, demos, and the site itself) is created by an open commu
 
 ## 4 simple steps to MDN
 
-MDN is an open source resource where **anyone** can add and edit content. You don't need to be a programmer or know a lot about technologies. There are plenty of things that need to be done, from the simple (proofreading and correcting typos) to the complex (writing API documentation).
+MDN is an open source resource where **anyone** can add and edit content. You don't need to be a programmer or know a lot about technologies. There are plenty of things that need to be done, from proofreading and correcting typos to writing API documentation.
 
 Contributing is easy and safe. Even if you make a mistake, it's easily fixed. Even if you don't know exactly how things should look, or your grammar isn't all that good, don't worry about it! We have a team of people whose job it is to make sure that MDN's contents are as good as possible. Someone will be along to make sure your work is tidy and well-written. Share what you know and follow your strengths.
 
@@ -26,10 +26,10 @@ Once you've decided what kind of task you want to do, find a specific page, code
 
 If you are not sure what to do at any point, then you are more than [welcome to ask for help](../../index.md#get-in-touch). Don’t worry about doing it perfectly; other MDN Web Docs contributors are here to help fix errors that slip through.
 
-## Useful complete beginner's guides
+## Useful beginner's guides
 
 We expect contributors to MDN to have a certain amount of prerequisite knowledge
-before they start working on the content. If you are new to the following
+before they start contributing to the content. If you are new to the following
 topics, we'd advise you to look at the provided links to help you get up to
 speed:
 
