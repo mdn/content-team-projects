@@ -29,7 +29,7 @@ Your presence on the project should be productive, and it shouldn’t stop other
 
 ## Be polite, be kind, avoid incendiary or offensive language
 
-We could abbreviate this to "be kind". This is our number one bit of advice for anyone starting open source contributions.
+We could abbreviate this to "be kind". This is our number one piece of advice for anyone starting open source contributions.
 
 Be kind to the other contributors on the project, and it will be a happier and more productive place. This includes:
 
@@ -38,7 +38,7 @@ Be kind to the other contributors on the project, and it will be a happier and m
 - Always responding respectfully to people, even if you feel like the answer to their question was a bit obvious, or that they are repeating themselves.
 - Trying to help people to do better next time, in a supportive way, e.g. during pull request reviews or as you answer their questions. Saying "this is wrong" or "here is the answer" is nowhere near as helpful as saying "This is OK, but I feel that this would be better if you tried doing it more like this, here's a blog post for more ideas" or "you can find the answer here; also check out this link for more common answers".
 
-You and the other contributors are (or should be) here because they want to make a positive contribution to the project, but beyond that, you can't assume anything about them. This includes their:
+You (and other contributors) should be here because you want to make a positive contribution to the project, but beyond that, you can't assume anything about them. This includes their:
 
 - Knowledge of the project and the technologies used to build it
 - Gender, sexuality, age, languages spoken, location, political views, religion, or other personal attributes
@@ -49,7 +49,7 @@ You and the other contributors are (or should be) here because they want to make
 
 You should therefore keep what you write on topic as much as possible, staying away from potential controversial off-topic subjects like religion or politics, and being supportive and respectful even if you disagree with someone, or don’t like a decision they’ve made.
 
-Also, you should refrain from any swearing / offensive language when communicating, even if it is not directed at anyone in particular. It is not needed for participation, and some people are really sensitive to it.
+Also, you should refrain from any swearing/offensive language when communicating, even if it is not directed at anyone in particular. It is not needed for participation, and people are sensitive to it.
 
 Be aware that there are rules in place in any good OSP to protect its contributors against being made to feel uncomfortable while contributing. This usually comes in the form of a CODE_OF_CONDUCT.md file on GitHub.
 
