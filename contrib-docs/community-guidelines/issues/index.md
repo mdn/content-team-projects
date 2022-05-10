@@ -7,6 +7,24 @@ What we accept and don't accept
 
 Discussions should be here
 
+<!-- content from elsewhere -->
+
+## Make progress, not noise
+
+Think carefully about the way you handle communication in the project — make sure it is useful, and that it doesn’t make other contributors jobs harder. Submitting pull requests to fix issues is great, but are they truly useful, and easy to review? Filing issues and joining in other conversations is fine, but are your issues and comments on topic, or are they just adding noise?
+
+As a rule, do:
+
+- Use [GitHub discussion](https://github.com/mdn/mdn-community/discussions) before filing an issue. This helps to keep issues focused and productive.
+- Ask questions using other mechanisms like [chat rooms](https://chat.mozilla.org/#/room/#mdn:mozilla.org) or [forums](<(https://discourse.mozilla.org/c/mdn/236)>) if you are not sure whether something is useful or have a simple question.
+- Read the [contributor documentation]() and [how to write documentation]() first to try to solve the issue yourself.
+
+Don’t:
+
+- Complicate issues by trying to discuss multiple topics at once, or making off-topic comments.
+- Open lots of issues asking vague questions.
+- Ask questions without trying to solve the problem yourself first.
+
 ## Working on an issue
 
 All repositories have an issue tracker, where you can find tasks to help contribute

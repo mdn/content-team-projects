@@ -2,15 +2,15 @@
 
 If you’ve not worked on an open source project (OSP) before, it is a good idea to read this article before starting to contribute to MDN Web Docs (or other open source projects). There are a few best practices to adopt that will help ensure that you and the other project contributors feel valued and safe, and stay productive.
 
-This article won’t teach you everything about contributing to open source; the aim here is more to give you some good starting points to think about as you get started with open source contributions.
+This article won’t teach you everything about contributing to open source; the aim here is to give you some good starting points to think about as you get started with open source contributions.
 
 ## Think about why you are contributing to an OSP
 
-Before you start contributing to an open source project, ask yourself why you want to do that. It is fine if the answer to this question is just "I’m bored and I want to find something productive to do with my time", but you can probably go deeper than that.
+Before you start contributing to an open source project, ask yourself why you want to. It is fine if the answer to this question is just "I’m bored and I want to find something productive to do with my time", but you can probably go deeper than that.
 
 Even better reasons might include:
 
-- I use this tool all the time and found a bug in it/want to help make it better.
+- I use this tool all the time and found a bug or issues and want to help fix it.
 - I want to help other people use the tool more successfully.
 - I want to help other people contribute to the project more successfully.
 - I want to improve my own skills.
@@ -34,7 +34,7 @@ We could abbreviate this to "be kind". This is our number one piece of advice fo
 Be kind to the other contributors on the project, and it will be a happier and more productive place. This includes:
 
 - Thanking people if they help you.
-- Congratulating people where appropriate (for example if they land their first ever pull request, or fix a particularly difficult bug).
+- Congratulating people where appropriate (for example if they land their first ever pull request, or fix a particularly difficult issue).
 - Always responding respectfully to people, even if you feel like the answer to their question was a bit obvious, or that they are repeating themselves.
 - Trying to help people to do better next time, in a supportive way, e.g. during pull request reviews or as you answer their questions. Saying "this is wrong" or "here is the answer" is nowhere near as helpful as saying "This is OK, but I feel that this would be better if you tried doing it more like this, here's a blog post for more ideas" or "you can find the answer here; also check out this link for more common answers".
 
@@ -47,42 +47,47 @@ You (and other contributors) should be here because you want to make a positive 
 - Expectations
 - Sense of humor
 
-You should therefore keep what you write on topic as much as possible, staying away from potential controversial off-topic subjects like religion or politics, and being supportive and respectful even if you disagree with someone, or don’t like a decision they’ve made.
+You should therefore keep what you write on topic as much as possible, staying away from potential controversial off-topic subjects like religion or politics. Be supportive and respectful even if you disagree with someone, or don’t like a decision they’ve made.
 
 Also, you should refrain from any swearing/offensive language when communicating, even if it is not directed at anyone in particular. It is not needed for participation, and people are sensitive to it.
 
 Be aware that there are rules in place in any good OSP to protect its contributors against being made to feel uncomfortable while contributing. This usually comes in the form of a CODE_OF_CONDUCT.md file on GitHub.
 
-For example, MDN Web Docs's repos are governed by the wide-reaching [Mozilla Community Participation Guidelines](https://www.mozilla.org/en-US/about/governance/policies/participation/). Usually mildly offensive behavior on MDN Web Docs repos (such as constantly being off-topic/disruptive, or being rude) will usually be first responded to by a warning on the repo, followed by a final warning, then a temporary or permanent ban. More serious behavioral problems such as hate speech or threats against another contributor will not be tolerated, and will likely result in an instant ban.
+For example, MDN Web Docs's repositories are governed by the wide-reaching [Mozilla Community Participation Guidelines](https://www.mozilla.org/en-US/about/governance/policies/participation/). Usually mildly offensive behavior on these repositories (such as constantly being off-topic/disruptive, or being rude) will usually be first responded to by a warning on the repo, followed by a final warning, then a temporary or permanent ban. More serious behavioral problems such as hate speech or threats against another contributor will not be tolerated, and will likely result in a ban.
 
 If you encounter anything that makes you feel uncomfortable, you should always [report it](https://www.mozilla.org/en-US/about/governance/policies/participation/#reporting) using the mechanism provided on the code of conduct.
 
 ## Choose effective contributions
 
-Think about [what you want to do](../../../index.md#ways-to-contribute) on the project. If you are just getting started, look for the "good first issue" label, which is generally given to issues that are quite simple and good for first time contributors to the project. We are also soon going to start triaging our issues more extensively, by adding other labels such as priority indicators. Try picking some issues that you think you can manage with the time you have available, and ask to be assigned to them.
+Think about [what you want to do](../../../index.md#ways-to-contribute) on the project. If you are just getting started, look for the `good first issue` label, which is generally given to issues that are quite simple and good for first time contributors to the project. Check the other labels attached to the issue, as some will indicate how long a fix will take. Others (such as those on the mdn/content repository) indicate the subject area (e.g. `Content: JS` and `Content: CSS`). Try picking some issues that you think you can manage with the time you have available, and ask to be assigned to them.
 
 You could also contribute by opening pull requests to fix problems that you come across while reading MDN Web Docs articles.
 
 A lot of the work on MDN Web Docs revolves around writing documentation and code examples, but there are other ways to contribute too:
 
 - Help to triage issues that come in.
+- Help to review pull requests from other contributors.
+- Help fix platform issues.
 - Help fix typos.
-- Help to improve grammar and make pages more understandable.
+- Help with content translations.
 - Help to mentor people that are trying to make fixes.
 
-Every fix is useful, no matter how small, and we won’t turn any fix away. Nevertheless, try to make sure your fixes are productive. We’d like to advise against these kinds of contributions:
+<!-- INCLUDE LINKS ABOVE -->
+
+We accept a number of different types of fixes and updates. You can find out more in our [PR Etiquette pages](). In brief, here is what we advise against:
 
 - Updating code styling just because "you like that style better".
 - Updating language style "just because you like that style better".
 - Changing pages from US English to British English.
 - Adding or removing a bunch of punctuation when there’s not really anything wrong.
+- Adding external links/urls (please see [our policy on external links here]())
 - Changing the testing framework we are using for something else because you prefer it.
 
-In many cases, things are like they are on OSPs for a reason. You should read their style guides if they have one, and if in doubt about whether something is productive, [always ask first](https://github.com/mdn/mdn-community/discussions)!
+MDN Web Docs is a big project, so we try to have clear guidelines on what we accept and what we don't. Primarily consider if what you're adding is productive, and if in doubt, [always ask first](https://github.com/mdn/mdn-community/discussions)!
 
 ## Read the manual
 
-Good OSPs will always make contributor documentation readily available. On GitHub projects, it is usually in the repo's CONTRIBUTING.md file, or sometimes in the project's README.md file. Being a documentation project, MDN Web Docs content has a [README](https://github.com/mdn/content/blob/main/README.md) and a decent set of contributor docs on the site itself (see [Contributing to MDN](/en-US/docs/MDN/Contribute)).
+Good OSPs will always make contributor documentation readily available. Each of our repositories has a CONTRIBUTING.md file and README.md file. Please consider consulting these. Being a documentation project, MDN Web Docs also has writing guidelines for content; see the [How To Write on mdn itself]().
 
 [//]: # "TODO: Update the above link to contribute docs' new home"
 
@@ -92,25 +97,19 @@ Of course, the docs won’t always be perfect. If an explanation is hard to find
 
 ## Find out where to ask questions
 
-Always find out where the best place is to ask questions. Good OSPs will always make this clear in their docs (see [ask for help on MDN](../../../index.md#get-in-touch)). If you want to ask general questions, then always make use of these channels. Don't just file an issue on GitHub for every question, as it adds noise to the project (see "Make progress, not noise" below).
-
-## Make progress, not noise
-
-Think carefully about the way you handle communication in the project — make sure it is useful, and that it doesn’t make other contributor’s jobs harder. Submitting pull requests to fix bugs is great, but are they truly useful, and easy to review? Filing issues and joining in other conversations is fine, but are your issues and comments on topic, or are they just adding noise?
+Always find out where the best place is to ask questions. Good OSPs will always make this clear in their docs (see [ask for help on MDN](../../../index.md#get-in-touch)). If you want to ask general questions, then always make use of these channels. Please don't file an issue on GitHub for every question.
 
 As a rule, do:
 
 - Use [GitHub discussion](https://github.com/mdn/mdn-community/discussions) before filing an issue. This helps to keep issues focused and productive.
-- Fix one issue per PR — it may be slightly more work for you, but it is much easier to review a single clear fix.
 - Contribute to other threads if you have a useful point to make or can answer someone else’s question.
 - Ask questions using other mechanisms like [chat rooms](https://chat.mozilla.org/#/room/#mdn:mozilla.org) or [forums](<(https://discourse.mozilla.org/c/mdn/236)>) if you are not sure whether something is useful or have a simple question.
-- Read the manual first to try to answer the question yourself before asking it.
+- Read the [contributor documentation]() and [how to write documentation]() first to try to answer the question yourself before asking it.
 
 Don’t:
 
-- Complicate issues by trying to discuss multiple topics at once, or making off-topic comments.
-- Try to cram multiple fixes into a single pull request. It makes it a lot harder to review, and raises suspicions (some people might think you are trying to hide some malicious code in between the valid changes).
-- Open lots of issues asking vague questions.
+- Complicate issues or discussions by trying to discuss multiple topics at once, or making off-topic comments.
+- Open lots of discussions asking vague questions.
 - Ask questions without trying to solve the problem yourself first.
 
 ## OSPs are a democracy (almost)
@@ -127,7 +126,7 @@ It is useful to get to know any project’s moderators, so you know who best to 
 
 Bear in mind that many people working on OSPs are doing it in their free time, without payment, and all people working on OSPs are generally very busy. If you are waiting for something like a pull request review, or an answer to a question, be patient.
 
-[//]: # "TODO: Link to pull request docs once written"
+[//]: # "TODO: Link to pull request docs & issue docs once written - be more clear about time below"
 
 It is reasonable to wait a few days and then ping someone politely to ask if they’ve had time to look at it. If they happen to be too busy, it may be best to wait a further week and try following up with them then.
 

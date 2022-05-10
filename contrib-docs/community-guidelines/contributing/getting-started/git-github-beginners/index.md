@@ -2,22 +2,21 @@
 
 [Git](https://git-scm.com/) and [GitHub](https://github.com/) are challenging tools to learn and master, but with a few simple commands and some good advice, you should be able to do enough to start contributing to MDN without too much trouble. The aim of this article is not to help you master Git or GitHub, but to give you just enough to be productive with it at a basic level and contribute to MDN.
 
-If you are familiar with Git/GitHub basics already, you probably won't learn anything new here, but you may still find this article useful as a reference. There is a [GitHub cheatsheet](/en-US/docs/MDN/Contribute/GitHub_cheatsheet) available too, with just the commands and none of the long explanations.
+If you are familiar with Git/GitHub basics already, you probably won't learn anything new here, but you may still find this article useful as a reference.
 
 ## Essential concepts
 
 The following are essential concepts that you must be familiar with to get the most out of Git and GitHub.
 
-- Git is a _version control system_ tool — an essential class of tools in any development workflow. It allows a group of developers to work on the same code base without getting in each other's way, stores the code base safely in a remote location, allows developers to roll the code back to previous states if required, and more.
-- GitHub is a web application that provides useful tools on top of Git for working with stored codebases, as well as server space to store the codebases. Its functions are similar to those of other applications, such as [GitLab](https://about.gitlab.com/) or [Bitbucket](https://bitbucket.org/).
+- **Git** is a _version control system_ tool — an essential class of tools in any development workflow. It allows a group of developers to work on the same code base (without getting in each other's way), stores the code base safely in a remote location, allows developers to roll the code back to previous states if required, and more.
+- **GitHub** is a web application that provides useful tools on top of Git for working with stored codebases, as well as server space to store the codebases. Its functions are similar to those of other applications, such as [GitLab](https://about.gitlab.com/) or [Bitbucket](https://bitbucket.org/).
 - Each codebase is stored in a container called a _repository_, or _repo_.
-- Making a change to a repository minimally involves:
 
-  - Creating your own copy of that repo (called a _fork_).
-  - Creating a different version of the code in your fork of the repo (called a _branch_) and adding your changes to that alternative version.
-  - Proposing to make that change in the original copy of the repo via a _pull request_. You'll be learning all of these steps in this guide.
+Making a change to a repository minimally involves:
 
-## Assumptions made by this article
+- Creating your own copy of that repo (called a _fork_).
+- Creating a different version of the code in your fork of the repo (called a _branch_) and adding your changes to that alternative version.
+- Proposing to make that change in the original copy of the repo via a _pull request_. You'll be learning all of these steps in this guide.
 
 This article assumes that:
 
@@ -25,7 +24,9 @@ This article assumes that:
 - You are working on a system that understands standard Unix-style command line commands. macOS/Linux have this available out of the box; [Windows isn't quite as simple](/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line#windows) in this regard, but there are useful applications that emulate this functionality on Windows, such as Gitbash.
 - You'll be using the command line to interact with Git/GitHub. There are a number of GUI tools available for Git and GitHub, but they won't work with this guide.
 
-## Initial setup
+## Making changes to a repository
+
+### Initial setup
 
 Before you get started with working on any particular repo, follow these steps:
 
@@ -46,7 +47,9 @@ GitHub have created a useful guide to setting this up — see the starting point
 
 If you don't do this, you'll still be able to contribute to MDN, but you'll have to enter your username and password every time you interact with GitHub (e.g. whenever you submit a pull request, as seen below).
 
-## Setting up to work on a specific repo
+### Setting up to work on a specific repo
+
+<!-- UPDATE LINK-->
 
 There are a number of different repos you may have to update as you work on different MDN tasks (see [Where is everything on MDN? A guide to our repos](/en-US/docs/MDN/Contribute/Where_is_everything)), but there are a number of setup steps you should follow on every repo you work on, to make things easier and more consistent.
 
