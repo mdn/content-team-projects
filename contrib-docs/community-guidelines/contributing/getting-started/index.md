@@ -1,5 +1,11 @@
 # Getting Started
 
+Make this a list of pages
+
+- [Ways to contribute]()
+- [How MDN works]()
+- [Getting started on Github]()
+
 ## How MDN works
 
 Intro to content, yari, kuma, bcd, interactive examples etc...

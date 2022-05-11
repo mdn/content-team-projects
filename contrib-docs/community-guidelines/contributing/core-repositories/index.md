@@ -1,8 +1,6 @@
-[MDN Web Docs](https://developer.mozilla.org) is a complex project with lots of moving parts. [Contributing](../../../community-guidelines/index.md) to the site is easy to begin with if you have a bit of [GitHub knowledge](../getting-started/beginners/index.md) and are starting out on some simple typo fixes or code snippet improvements.
+[MDN Web Docs](https://developer.mozilla.org) is a complex project with lots of moving parts. It's a good idea to get familiar with the projects different repositories, as there is quite a few bits of the content that aren’t stored in the page sources and instead come from somewhere else.
 
-However, when you start making more significant contributions such as adding entirely new pages, you’ll notice that there are quite a few bits of the content that aren’t stored in the page sources and instead come from somewhere else.
-
-This article acts as a quick guide to finding the different repos you need to edit to update the different parts of MDN Web Docs content.
+This article acts as a quick guide to finding the different repositories (repos) you need to edit to update the different parts of MDN Web Docs content.
 
 ## Core repos
 
@@ -15,10 +13,20 @@ This article acts as a quick guide to finding the different repos you need to ed
 - **Workflows**: <https://github.com/mdn/workflows>
   A growing collection of reusable GitHub Actions for use on MDN Web Docs repositories.
 - **Translated content**: <https://github.com/mdn/translated-content>. This is where localized content lives. Go here if you want to help translate pages into any of our [actively maintained locales](https://github.com/mdn/translated-content#locales).
-- **CSS data**: <https://github.com/mdn/data>. Originally envisaged as a hold-all repo for general purpose MDN Web Docs data, the data repo now serves the purpose of holding data about CSS features such as formal syntax, inheritance, computed value, animation type, etc. This is used to generate sections on CSS reference pages such as formal definition ([example](/en-US/docs/Web/CSS/font-variant-caps#formal_definition)) and formal syntax ([example](/en-US/docs/Web/CSS/font-variant-caps#formal_syntax)).
 
 ## Other repos
 
-- **Demo repos**. The MDN Web Docs GitHub org contains a huge number of demo repos, for example [css-examples](https://github.com/mdn/css-examples), [dom-examples](https://github.com/mdn/dom-examples), [webaudio-examples](https://github.com/mdn/webaudio-examples). These generally contain free-standing examples that are often linked to from our pages, but occasionally you’ll find one of these examples embedded into a page using a macro call like this — `{{EmbedGHLiveSample("css-examples/learn/tasks/grid/grid1.html", '100%', 700)}}`.
+<!-- UPDATE WITH REPO TRIAGE -->
 
-If you want to edit a standalone live example, it will always be found in one of these example repos.
+The MDN Web Docs GitHub org contains a huge number of example repos. These generally contain free-standing code examples that are often linked to from our pages, but occasionally you’ll find one of these examples embedded into a page using a macro call like this — `{{EmbedGHLiveSample("css-examples/learn/tasks/grid/grid1.html", '100%', 700)}}`.
+
+Always remember, if you are updating the code on any given page, you'll need to update the corresponding example repo as well.
+
+- **css-examples** [css-examples](https://github.com/mdn/css-examples) ...
+- **js-examples** [js-examples](https://github.com/mdn/js-examples) ...
+- **html-examples** [html-examples](https://github.com/mdn/html-examples) ...
+- **web-audio-examples** [webaudio-examples](https://github.com/mdn/webaudio-examples).
+- **web-component-examples** [css-examples](https://github.com/mdn/js-examples) ...
+
+
+
