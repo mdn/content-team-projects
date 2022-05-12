@@ -12,11 +12,11 @@ tags:
 
 MDN Web Docs contains _browser-neutral_ documentation that enables web developers to write _browser-agnostic_ code. In this article, you'll find information about whether or not a given topic and/or type of content should be included on MDN Web Docs.
 
-> **Note:** Be aware that all contributions to MDN fall under specific open source licenses; these are [described in detail](/en-US/docs/MDN/About#copyrights_and_licenses) on our [About MDN](/en-US/docs/MDN/About) page. Keep in mind that Mozilla's [Websites & Communications Terms of Use](https://www.mozilla.org/en-US/about/legal/terms/mozilla/) are in effect when you use or contribute to MDN. <!--- links need to be revisited--->
+> **Note:** Be aware that all contributions to MDN Web Docs fall under specific open source licenses; these are [described in detail](/en-US/docs/MDN/About#copyrights_and_licenses) on our [About MDN](/en-US/docs/MDN/About) page. Keep in mind that Mozilla's [Websites & Communications Terms of Use](https://www.mozilla.org/en-US/about/legal/terms/mozilla/) are in effect when you use or contribute to MDN Web Docs. <!--- links need to be revisited--->
 
 ## Topics that belong on MDN Web Docs
 
-In general, if it's an open web technology, we document it on MDN Web Docs. This includes any feature that can be used by web developers creating websites and applications, now and in the near future.
+In general, if it's an open web technology, we document it on MDN Web Docs. This includes any feature that can be used by web developers to create websites and applications, now and in the near future.
 
 If a feature is implemented by multiple browsers and either accepted as standard or is progressing towards standardization, then yes, we definitely document it here. If a feature is still very experimental and not implemented in multiple browsers and/or liable to change, then it is still suitable for inclusion, but may not be seen as a priority for the writer's team to work on.
 <!-- need to follow up on Ruth's feedback here: https://github.com/mdn/content-team-projects/pull/20#discussion_r865151254 -->
@@ -71,37 +71,34 @@ Here are some examples of types of documents that should _not_ be placed on MDN 
 
 <!--content copied from /en-us/mdn/guidelines/conventions_definitions -->
 
-## Definitions
+These terms are commonly associated with technologies and specifications. These are also defined in our [Browser compatibility project](https://github.com/mdn/browser-compat-data/blob/main/schemas/compat-data-schema.md#status-information).
 
-### Deprecated and obsolete
+### Deprecated
 
-**Deprecated** and **obsolete** are common terms associated with technologies and specifications, but what do they mean?
+The term **deprecated** on MDN Web Docs is used to mark an API or technology that is no longer recommended. A deprecated API or technology might be removed in the future or might only be kept for compatibility purposes and may still work. We recommend to avoid using the functionality marked as deprecated.
 
-- Deprecated
-  - : On MDN, the term **deprecated** is used to mark an API or technology that is no longer recommended, but is still implemented and may still work.
-    More recently, we've updated it to the definition used in our [browser-compat-data project](https://github.com/mdn/browser-compat-data/blob/main/schemas/compat-data-schema.md), which is that "the feature is no longer recommended. It might be removed in the future or might only be kept for compatibility purposes. Avoid using this functionality."
-- Obsolete
-  - : On MDN, the term **obsolete** was used to mark an API or technology that is not only no longer recommended, but also no longer implemented in browsers.
-    This was, however, confusing — it is similar to **deprecated**, and the distinction is not very helpful (you still shouldn't use it in a production site).
-    We are, therefore, not using it anymore, and any instances you come across should be removed/replaced by the term **deprecated**.
+### Obsolete
+
+On MDN Web Docs, the term **obsolete** was used to mark an API or technology that is not only no longer recommended but is also no longer implemented in browsers. The term was, however, confusing. It was similar to **deprecated** but it's distinction from **deprecated** ws not very helpful.
+
+> **Note:** We do not use the term **obsolete** on MDN Web Docs anymore. If you come across any instances, they should be removed or replaced with the term **deprecated**.
 
 ### Experimental
 
-**Experimental** can mean different things depending on the context you hear or read it in.
-When a technology is described as experimental on MDN, it means that the technology is nascent and immature, and currently in the process of being added to the Web platform (or considered for addition).
+The term **experimental** can mean different things depending on the context you hear or read it in.
+When a technology is described as experimental on MDN Web Docs, it means that the technology is nascent and immature and is currently _in the process_ of being added to the web platform (or being considered for addition).
 
-One or both of these will be true:
+For a technology that's marked **experimental**, one or both of the following conditions will be true:
 
-- It is implemented and enabled by default in less than two modern major browsers.
-- Its defining spec is likely to change significantly, in backwards-incompatible ways (i.e. it may break existing code that relies on the feature).
+- It is implemented and enabled by default in _less than two_ modern major browsers.
+- Its defining specification is likely to change significantly, in backwards-incompatible ways (i.e., it may break existing code that relies on the feature).
 
-If one or both of these definitions is true, then you should think carefully before you start using that technology in any kind of production project (i.e. not just a demo or experiment).
-See also the definition of experimental in our [browser-compat-data project](https://github.com/mdn/browser-compat-data/blob/main/schemas/compat-data-schema.md#status-information).
+If one or both of these conditions is true, then you should think carefully before you start using that technology in any kind of production project (i.e., not just a demo or experiment).
 
-Conversely, an item is no longer experimental when:
+Conversely, a technology is no longer considered **experimental** if one of the following conditions is true:
 
-- It is implemented in two or more major browsers; or
-- Its defining spec is unlikely to change in ways that will break the web.
+- It is implemented in two or more major browsers.
+- Its defining specification is unlikely to change in ways that will break the web.
 
-The _or_ is important here — usually if a technology is supported across several major browsers, the spec will be stable, but this is not always the case.
-And some technologies will have a stable spec and be well-used, but have no native support in browsers ([IMSC](/en-US/docs/Related/IMSC), for example).
+Usually, if a technology is supported across several major browsers, the specification will be stable, but this is not always the case.
+And some technologies might have a stable specification and be well-used but might not have native support in browsers ([IMSC](/en-US/docs/Related/IMSC), for example). <!-- need to revisit link -->
