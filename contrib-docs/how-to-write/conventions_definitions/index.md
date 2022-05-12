@@ -12,41 +12,6 @@ tags:
 
 This article defines some conventions and definitions that are commonly used on MDN, which might not be obvious to some people when they come across them in the documentation.
 
-## Definitions
-
-### Deprecated and obsolete
-
-**Deprecated** and **obsolete** are common terms associated with technologies and specifications, but what do they mean?
-
-- Deprecated
-  - : On MDN, the term **deprecated** is used to mark an API or technology that is no longer recommended, but is still implemented and may still work.
-    More recently, we've updated it to the definition used in our [browser-compat-data project](https://github.com/mdn/browser-compat-data/blob/main/schemas/compat-data-schema.md), which is that "the feature is no longer recommended. It might be removed in the future or might only be kept for compatibility purposes. Avoid using this functionality."
-- Obsolete
-  - : On MDN, the term **obsolete** was used to mark an API or technology that is not only no longer recommended, but also no longer implemented in browsers.
-    This was, however, confusing — it is similar to **deprecated**, and the distinction is not very helpful (you still shouldn't use it in a production site).
-    We are, therefore, not using it anymore, and any instances you come across should be removed/replaced by the term **deprecated**.
-
-### Experimental
-
-**Experimental** can mean different things depending on the context you hear or read it in.
-When a technology is described as experimental on MDN, it means that the technology is nascent and immature, and currently in the process of being added to the Web platform (or considered for addition).
-
-One or both of these will be true:
-
-- It is implemented and enabled by default in less than two modern major browsers.
-- Its defining spec is likely to change significantly, in backwards-incompatible ways (i.e. it may break existing code that relies on the feature).
-
-If one or both of these definitions is true, then you should think carefully before you start using that technology in any kind of production project (i.e. not just a demo or experiment).
-See also the definition of experimental in our [browser-compat-data project](https://github.com/mdn/browser-compat-data/blob/main/schemas/compat-data-schema.md#status-information).
-
-Conversely, an item is no longer experimental when:
-
-- It is implemented in two or more major browsers; or
-- Its defining spec is unlikely to change in ways that will break the web.
-
-The _or_ is important here — usually if a technology is supported across several major browsers, the spec will be stable, but this is not always the case.
-And some technologies will have a stable spec and be well-used, but have no native support in browsers ([IMSC](/en-US/docs/Related/IMSC), for example).
-
 ### Archived pages
 
 Archived pages are pages that are stored in the MDN [Archive of obsolete content](/en-US/docs/Archive).
