@@ -1,6 +1,6 @@
 ---
 title: Documenting a new technology
-slug: <MDN/Contribute/how-to-write/what-we-write>
+slug: 
 tags:
   - <Guide>
   - <Guidelines>
@@ -9,6 +9,31 @@ tags:
   - MDN Meta
 ---
 <{{MDNSidebar}}>
+
+<!-- content copied from /en-us/mdn/guidelines/conventions_definitions -->
+### When to document new technologies
+
+On MDN, we are constantly looking to document new web standards technologies as appropriate.
+We try to strike a balance between publishing the documentation early enough so developers can learn about new features as soon as they need to, and publishing it late enough so that the technology is mature and stable so the docs won't need constant updates or rapid removal.
+
+In general, our definition of the earliest we'll consider documenting a new technology is:
+
+_"When the feature is on a standards track and is implemented somewhere."_
+
+You should definitely consider documenting a new technology if:
+
+- It is specified in a specification document published under a reliable standards organization (such as W3C, WHATWG, Khronos, IETF, etc.), which has reached a reasonable level of stability (e.g. a W3C working draft or candidate recommendation, or the spec is looking to be fairly stable judging by the flow of issues filed against it).
+- It is implemented consistently in at least one browser, with other browser developers showing signs of interest (such as an active ticket or "intent to implement" process in effect).
+
+You should be more wary of documenting a new technology (but should still consider it if it makes sense) if it:
+
+- Doesn't have a spec, or the spec is a rough note that looks liable to change.
+- One or zero browsers currently implement it, and non-supporting browsers are not showing signs of interest in implementing it (you can gauge this by asking engineers who work on those browsers, looking at browser bug trackers and mailing lists, etc.).
+
+You should not consider documenting a new technology if it:
+
+- Is not a web-exposed technology and/or is completely proprietary.
+- Is already showing signs of being deprecated, or superseded by a similar feature.
 
 <!--content copied from /en-us/related/criteria_for_inclusion -->
 
