@@ -93,7 +93,7 @@ For a technology that's marked **experimental**, one or both of the following co
 - It is implemented and enabled by default in _less than two_ modern major browsers.
 - Its defining specification is likely to change significantly, in backwards-incompatible ways (i.e., it may break existing code that relies on the feature).
 
-If one or both of these conditions is true, then you should think carefully before you start using that technology in any kind of production project (i.e., not just a demo or experiment).
+If one or both of these conditions is true, then you should think carefully before you start using that technology in any kind of production project (i.e., a project that is not just a demo or experiment). On the other hand, as a web developer, you can try out a feature that is marked **experimental** and provide feedback to browser vendors and standards authors. <!--taken from https://github.com/mdn/browser-compat-data/blob/main/schemas/compat-data-schema.md#status-information -->
 
 Conversely, a technology is no longer considered **experimental** if one of the following conditions is true:
 
@@ -102,3 +102,5 @@ Conversely, a technology is no longer considered **experimental** if one of the 
 
 Usually, if a technology is supported across several major browsers, the specification will be stable, but this is not always the case.
 And some technologies might have a stable specification and be well-used but might not have native support in browsers ([IMSC](/en-US/docs/Related/IMSC), for example). <!-- need to revisit link -->
+
+A feature or technology that is not marked **experimental** or **deprecated** is said to be on a **standards track**, meaning the feature is part of an active specification or specification process.
