@@ -11,6 +11,9 @@ tags:
 {{MDNSidebar}}
 
 <!-- content copied from /en-us/mdn/guidelines/conventions_definitions -->
+
+<!---I removed section on 'Archived pages'. not sure what's the convention now or if we do it. Just covering deletion of pages here--->
+
 Pages are deleted from MDN Web Docs if they don't contain information that is useful in any way anymore, are out-of-date enough, and/or might be incorrect to the point where keeping them around might be misleading.
 
 Pages might be deleted when:
