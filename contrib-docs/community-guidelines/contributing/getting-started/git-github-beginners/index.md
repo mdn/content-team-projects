@@ -24,9 +24,8 @@ This article assumes that:
 - You are working on a system that understands standard Unix-style command line commands. macOS/Linux have this available out of the box; [Windows isn't quite as simple](/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line#windows) in this regard, but there are useful applications that emulate this functionality on Windows, such as Gitbash.
 - You'll be using the command line to interact with Git/GitHub. There are a number of GUI tools available for Git and GitHub, but they won't work with this guide.
 
-## Making changes to a repository
 
-### Initial setup
+## Getting setup
 
 Before you get started with working on any particular repo, follow these steps:
 
@@ -47,18 +46,12 @@ GitHub have created a useful guide to setting this up — see the starting point
 
 If you don't do this, you'll still be able to contribute to MDN, but you'll have to enter your username and password every time you interact with GitHub (e.g. whenever you submit a pull request, as seen below).
 
-### Setting up to work on a specific repo
-
-<!-- UPDATE LINK-->
-
-There are a number of different repos you may have to update as you work on different MDN tasks (see [Where is everything on MDN? A guide to our repos](/en-US/docs/MDN/Contribute/Where_is_everything)), but there are a number of setup steps you should follow on every repo you work on, to make things easier and more consistent.
-
 ### Forking and cloning
 
 _Forking_ and _cloning_ are two terms you'll come across often in the world of Git:
 
-- Forking means creating your own copy of a repo on GitHub.
-- Cloning means making a local copy of a repo for you to work on (i.e. on your local hard drive).
+- **Forking** means creating your own copy of a repo on GitHub.
+- **Cloning** means making a local copy of a repo for you to work on (i.e. on your local hard drive).
 
 It is possible to do the two things separately, but in practice you will nearly always do them together when contributing to other people's projects. You should first make a fork of each repo you want to work on. This is required for you to submit change requests to the main version of the repo (we'll learn how to create a pull request later on). Due to security reasons, you can't submit changes directly to the main version of the repo. So to submit changes, first fork the main repo, then push the changes to your fork, and then create a pull request to get the changes from your fork merged into the main repo.
 
@@ -70,11 +63,11 @@ Let's fork <https://github.com/mdn/content> right now; you'll definitely be cont
 
 2. A modal window will appear, asking you where you want to fork the repo to. Select your personal GitHub account.
 
-   A message will appear saying something like "Forking mdn/content. It should only take a few seconds." Once GitHub has finished forking, your browser should redirect to the page for the new fork. As an example, my fork of <https://github.com/mdn/content> is available at <https://github.com/chrisdavidmills/content>.
+   A message will appear saying something like "Forking mdn/content. It should only take a few seconds." Once GitHub has finished forking, your browser should redirect to the page for the new fork. Instead of viewing <https://github.com/mdn/content> you should be viewing <https://github.com/yourusername/content>.
 
 Now you've forked the repo, it is time to clone your fork locally. To do this:
 
-1. Go to your fork's page on github.com (e.g. `https://github.com/<your-user-name>/content`).
+1. Go to your fork's page on github.com (e.g. `https://github.com/yourusername/content`).
 2. Press the green "Code" button at the top of the files list. Something similar to the following popup should appear as a result:
 
    ![Popup window showing a clone URL along with options to open with GitHub Desktop and download zip](code-popup.png)
@@ -83,7 +76,7 @@ Now you've forked the repo, it is time to clone your fork locally. To do this:
 4. Now open up the command line on your computer, and navigate into the directory you set up earlier to store your local git repo clones in using the cd command, e.g.
 
    ```bash
-   cd git
+   cd mdn-git
    ```
 
 5. Clone your fork by entering a command with the following form:
@@ -92,58 +85,69 @@ Now you've forked the repo, it is time to clone your fork locally. To do this:
    git clone the-url-you-copied
    ```
 
-   So for example my cloning command looked like this:
+   Which should look something like this:
 
    ```bash
-   git clone git@github.com:chrisdavidmills/content.git
+   git clone git@github.com:yourusername/content.git
    ```
 
 You should now find a content directory inside your git directory, containing the contents of the repo.
 
+You'll need to navigate inside that directory for the following instructions to work.
+
+```bash
+cd content
+```
+
 ### Setting up a remote to point to the main version of the repo
 
-One last thing to do before moving on is set up a _remote_ to point to the main version of the repo, e.g. <https://github.com/mdn/content> in the case of our example. A remote is basically a pointer to a specific remote repo location on GitHub, and is most commonly used to update your local clone so it is up-to-date with the latest main repo, as we'll see below.
+One last thing to do before moving on is set up a _remote_ to point to the main version of the repo; <https://github.com/mdn/content>. Simply put a remote is a link to the repo on github. When we cloned the repo a remote to our forked version was automatically added. However we also want a link to the main repo on mdn as this is where all the main changes happen and will help us keep our fork and cloned copies up to date.
 
-Setting up a remote is done with the `git remote add` command, which looks like this:
+If you type the following:
+
+```bash
+git remote -v
+```
+
+Which should show you something like this:
+
+```bash
+origin    git@github.com:yourusername/content.git (fetch)
+origin    git@github.com:yourusername/content.git (push)
+```
+
+Let's set up another remote with the `git remote add` command, which looks like this:
 
 ```bash
 git remote add remote-name repo-you-want-to-point-to
 ```
 
-- _remote-name_ is a name that you decide on, which is used to refer to the remote later on. It is good to stick to a consistent name for remotes across different repos that have the same purpose, so the same remote name will do the same thing everywhere, and you are less likely to get confused. So for example, the main version of the repo that you forked your version from is often called the "upstream repo", therefore people often use "upstream" as the name of the remote upstream location. I usually call my upstream remotes "mozilla", to signify that they point to Mozilla's main copy of the repo.
+- _remote-name_ is a name that you decide on, which is used to refer to the remote later on. It is good to stick to a consistent name for remotes across different repos that have the same purpose, so the same remote name will do the same thing everywhere, and you are less likely to get confused. So for example, the main version of the repo that you forked your version from is often called the "upstream repo", therefore people often use `upstream` as the name of the remote upstream location. Another alternative would be `mdn` to signify that it points to MDN's main repo.
 - _repo-you-want-to-point-to_ is the SSH (or HTTPS) URL of the repo you want to point to, retrieved in the same way as we did when we were cloning our fork earlier.
 
 So, to add your remote:
 
 1. Go to the github.com page for the main version of the repo (<https://github.com/mdn/content> in this example) and retrieve the SSH or HTTPS URL as appropriate, from the "Code" popup.
-2. In your command line, `cd` into your content directory:
+2. Now run the above command, replacing _remote-name_ and _repo-you-want-to-point-to_ as appropriate:
 
    ```bash
-   cd content
-   ```
-
-3. Now run a command along the following lines, replacing _remote-name_ and _repo-you-want-to-point-to_ as appropriate:
-
-   ```bash
-   git remote add remote-name repo-you-want-to-point-to
-   ```
-
-   So for example, I used the SSH URL and called my remote "mozilla":
-
-   ```bash
-   git remote add mozilla git@github.com:mdn/content.git
+   git remote add mdn git@github.com:mdn/content.git
    ```
 
 Your remote should now be set up. You can verify it by running the command `git remote -v` in your terminal, which outputs a list of your remote names and where they point to. You should see something a bit like this:
 
 ```plain
-mozilla    git@github.com:mdn/content.git (fetch)
-mozilla    git@github.com:mdn/content.git (push)
-origin    git@github.com:chrisdavidmills/content.git (fetch)
-origin    git@github.com:chrisdavidmills/content.git (push)
+mdn    git@github.com:mdn/content.git (fetch)
+mdn    git@github.com:mdn/content.git (push)
+origin    git@github.com:yourusername/content.git (fetch)
+origin    git@github.com:yourusername/content.git (push)
 ```
 
-## Preparing to make a change to the repo
+<!-- UPDATE LINK-->
+
+Our example above used the mdn/content repo. However there are lots of different repos within the MDN organization. The instructions above should work with all of them. It's also worth checking out the `README.md` files which are associated with each repository.
+
+## PMaking changes to a repo
 
 Now you've got your local fork clone all set up to work with, there is a set of commands you should get in the habit of running before you attempt to make any new changes.
 
@@ -151,7 +155,7 @@ Now you've got your local fork clone all set up to work with, there is a set of 
 
 Each repo has a number of different branches, which are basically different versions of the codebase inside the same repo. The idea is that for each change to a codebase, you make the change on a separate branch and test it there first, before then pushing the changes to the main copy of the code.
 
-The main branch of the content repo is called "main" (it might be called something else like "master" in other repos, and if so you'll have to update the name of it in all commands shown below). You'll be on this branch by default if you've just cloned the repo, but if you've already done some work you'll likely be on a different branch.
+The main branch of the content repo is called "main". You'll be on this branch by default if you've just cloned the repo, but if you've already done some work you'll likely be on a different branch.
 Make sure you run the following to switch to the main branch before doing anything else:
 
 ```bash
@@ -162,7 +166,7 @@ git switch main
 
 ### Update your main branch
 
-Next up, you should update your main branch so that it contains the same content as the main branch of the main repo. The content repo is updated many times every day by a large number of contributors, so if you don't do this, your version will get out-of-date, and this will cause problems when you try to submit your updates. This is where your remote will come in handy!
+Next up, you should update your main branch so that it contains the same content as the main branch of the mdn repo. The content repo is updated many times every day by a large number of contributors, so if you don't do this, your version will get out-of-date, and this will cause problems when you try to submit your updates. This is where your remote will come in handy!
 
 To update your repo:
 
@@ -175,7 +179,7 @@ To update your repo:
    So for example:
 
    ```bash
-   git fetch mozilla
+   git fetch mdn
    ```
 
 2. Next, replace the contents of your main branch with the remote repo's main branch. There are many different ways you could do this, but I tend to use the `rebase` command, like this:
@@ -187,7 +191,7 @@ To update your repo:
    So for example:
 
    ```bash
-   git rebase mozilla/main
+   git rebase mdn/main
    ```
 
 3. Finally, push those changes up to the remote version of your fork using:
@@ -196,7 +200,7 @@ To update your repo:
    git push
    ```
 
-You'll know if your updates worked properly by looking at the github.com page for your fork (i.e. mine is <https://github.com/chrisdavidmills/content>). It should say something like "This branch is even with mdn:main." somewhere near the top. If it says your main branch is behind mdn:main by a number of commits, then you'll need to try it again, or [troubleshoot](#troubleshooting).
+You'll know if your updates worked properly by looking at the github.com page for your fork (e.g. <https://github.com/yourusername/content>). It should say something like "This branch is even with mdn:main." somewhere near the top. If it says your main branch is behind mdn:main by a number of commits, then you'll need to try it again, or [troubleshoot](#troubleshooting).
 
 ### Create a new branch to do your work in
 
@@ -204,7 +208,7 @@ Once you've got your main branch up to date in your fork, you must always create
 
 To create a new branch:
 
-1. Go to your fork's page on github.com (i.e. mine is <https://github.com/chrisdavidmills/content>) and find the branch button at the top left-hand corner of the file list, which should say "main" on it:
+1. Go to your fork's page on github.com (e.g. <https://github.com/yourusername/content>) and find the branch button at the top left-hand corner of the file list, which should say "main" on it:
 
    ![Button labeled main](branch-button.png)
 
