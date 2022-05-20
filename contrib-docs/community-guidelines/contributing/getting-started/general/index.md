@@ -1,11 +1,11 @@
-# Getting started in MDN Web Docs
+# Getting started with MDN Web Docs
 
 We are an open community of developers building resources for a better Web, regardless of brand, browser, or platform. Anyone can contribute, and each person who does contribute makes us stronger. Together we can continue to drive innovation on the Web to serve the greater good. It starts here, with you.
 
 Every part of MDN (docs, demos, and the site itself) is created by an open community of developers. Please, join us!
 
 ## 4 simple steps to MDN
- 
+
 MDN is an open source resource where **anyone** can add and edit content. You don't need to be a programmer or know a lot about technologies. There are plenty of things that need to be done, from proofreading and correcting typos to writing API documentation.
 
 Contributing is easy and safe. Even if you make a mistake, it's easily fixed. Even if you don't know exactly how things should look, or your grammar isn't all that good, don't worry about it! We have a team of people whose job it is to make sure that MDN's contents are as good as possible. Someone will be along to make sure your work is tidy and well-written. Share what you know and follow your strengths.
