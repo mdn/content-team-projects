@@ -2,7 +2,9 @@
 
 ## MDN Web Docs is Open Source
 
-MDN Web Docs is an open-source project. As such, any individual or company can contribute to the content and code of MDN Web Docs. However, it also means that the project needs to comply with the [open source definition](https://opensource.org/osd) and be [governed by an Open Source Initiative(OSI)-approved license](https://opensource.org/licenses).
+MDN Web Docs is an open-source, collaborative project that documents web platform technologies, including [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), and [Web APIs](https://developer.mozilla.org/en-US/docs/Web/API). We also provide extensive [learning resources](https://developer.mozilla.org/en-US/docs/Learn) for early-stage developers and students.
+
+As such, any individual or company can contribute to the content and code of MDN Web Docs. However, it also means that the project needs to comply with the [open source definition](https://opensource.org/osd) and be [governed by an Open Source Initiative(OSI)-approved license](https://opensource.org/licenses).
 
 At a high level, the open source definition states that the project and its source code should be freely redistributed in part, whole, or part of aggregate software distribution. Being open-source also means that anyone can modify the project and create derivative works. In addition, the project should be free of discrimination against individuals, groups, fields, and endeavors.
 
