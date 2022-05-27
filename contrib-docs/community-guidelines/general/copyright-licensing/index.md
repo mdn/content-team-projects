@@ -42,4 +42,4 @@ If you have any questions or concerns about anything discussed here, please [ope
 
 ### Logos, trademarks, service marks, and wordmarks
 
-The rights of the trademarks, logos and service marks of Mozilla and the look and feel of this website are not licensed under the Creative Commons license. To the extent they are works of authorship (like logos and graphic design), they are not included in the licensed work under those terms. If you have any other questions about complying with our licensing terms for this collection, you should contact Mozilla here: [licensing@mozilla.org](mailto:licensing@mozilla.org "mailto:licensing@mozilla.org").
+The rights of the trademarks, logos, and service marks of Mozilla and the look and feel of this website are not licensed under the Creative Commons license. Therefore, to the extent they are works of authorship (like logos and graphic design), they are not included in the licensed work under those terms. If you have any other questions about complying with our licensing terms for this collection, you should contact Mozilla here: [licensing@mozilla.org](mailto:licensing@mozilla.org).
