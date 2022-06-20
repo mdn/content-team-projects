@@ -21,13 +21,13 @@ Keep the target audience for the content you are writing in mind. For example, a
 
 ### Consider the three Cs of writing
 
-The three Cs of writing include writing Clearly, writing Concisely, and writing Consistently.
+The three Cs of good writing are writing clearly, concisely, and consistently.
 
-- Ensure that your writing is clear and simple. In general, use short sentences, active voice, and unambiguous pronouns.
-- When writing any document, it's important to know how much to say. If you provide excessive detail, the page becomes tedious to read and it will rarely be used.
-- Ensure you use the same verbiage consistently throughout the page.
+- **Clear:** Ensure that your writing is clear and simple. In general, use active voice and unambiguous pronouns. Write short sentences, sticking to one idea per sentence. Define new terms, keeping the target audience in, before using them.
+- **Concise:** When writing any document, it's important to know how much to say. If you provide excessive detail, the page becomes tedious to read and it will rarely be used.
+- **Consistent:** Ensure you use the same verbiage consistently throughout the page and across multiple pages.
 
-Provide enough quality material for search engines to adequately analyze and rank the page. To learn more about this, see [How to write for SEO on MDN](https://developer.mozilla.org/en-US/docs/MDN/Contribute/Howto/Write_for_SEO). <!-- link to be revisited -->
+TBD: Provide enough quality material for search engines to adequately analyze and rank the page. To learn more about this, see [How to write for SEO on MDN](https://developer.mozilla.org/en-US/docs/MDN/Contribute/Howto/Write_for_SEO). <!-- content and link to be revisited -->
 
 ### Consider the length of the article
 
@@ -35,7 +35,7 @@ Overly-short content pages are hard to find. If a page is "thin"—that is, the 
 
 ### Include relevant examples
 
-In general, add examples or scenarios to better explain the content you are writing. This helps readers to consume conceptual information in a more tangible and practical way.
+In general, add examples or real-life scenarios to better explain the content you are writing. This helps readers to consume conceptual information in a more tangible and practical way.
 
 ### Provide a descriptive introduction
 
@@ -107,7 +107,7 @@ Both versions are gender-specific. To fix this, use gender-neutral pronouns like
 
 > _A confirmation dialog asks the user if they want to allow the web page to make use of their webcam._
 
-> **Note:** MDN Web Docs allows the use of this very common syntax (which is controversial among usage authorities) to make up for the lack of a neutral gender in English.
+> **Note:** MDN Web Docs allow the use of this very common syntax (which is controversial among usage authorities) to make up for the lack of a neutral gender in English.
 >
 > The use of the third-person plural as a gender neutral pronoun (that is, using "they," "them", "their," and "theirs") is an accepted practice, commonly known as "[singular 'they'](https://en.wikipedia.org/wiki/Singular_they)."
 
@@ -125,12 +125,6 @@ This last example of dealing with the problem is arguably better.
 Not only is it grammatically more correct, but removes some of the complexity associated with dealing with genders across different languages that may have wildly different gender rules.
 This solution can make translation easier for both readers and translators.
 
-
-
-
-
-
-
 ## Writing style
 
 Other than writing grammatically correct sentences in English, we recommend you follow these guidelines to keep content consistent across MDN Web Docs.
@@ -139,7 +133,7 @@ Other than writing grammatically correct sentences in English, we recommend you 
 
 An abbreviation is a shortened version of a longer word, while an acronym is a new word created using the first letter of each word from a phrase. This section describes are guidelines for abbreviations and acronyms.
 
-#### Acronym expansions
+#### Expansions
 
 On the first mention of a term on a page, expand acronyms that are likely to be unfamiliar to users. When in doubt, expand it—or better yet, link it to the article or [glossary](/en-US/docs/Glossary) entry describing the technology.
 
@@ -186,11 +180,9 @@ Use full capitals and delete periods in all abbreviations and acronyms, includin
 | N.B.   | _nota bene_      | note well               |
 | P.S.   | _post scriptum_  | postscript              |
 
-> **Note:** Always consider whether it's truly beneficial to use a Latin abbreviation.
-> Some of these are used so rarely that many readers will either confuse or fail to understand their meanings.
+> **Note:** Always consider whether it's truly beneficial to use a Latin abbreviation. Some of these are used so rarely that many readers will either confuse or fail to understand their meanings.
 >
-> Also, be sure that _you_ use them correctly, if you choose to do so.
-> For example, be careful not to confuse "e.g." with "i.e.", which is a common error.
+> Also, be sure that _you_ use them correctly if you choose to do so. For example, be careful not to confuse "e.g." with "i.e.", which is a common error.
 
 #### Plurals of abbreviations and acronyms
 
@@ -268,7 +260,6 @@ Don't use an apostrophe.
 - **Correct**: 486s
 - **Incorrect**: 486's
 
-
 ### Pluralization
 
 Use English-style plurals, not the Latin- or Greek-influenced forms.
@@ -276,40 +267,76 @@ Use English-style plurals, not the Latin- or Greek-influenced forms.
 - **Correct**: syllabuses, octopuses
 - **Incorrect**: syllabi, octopi
 
-
-### Punctuations
+### Punctuation
 
 #### Apostrophes and quotation marks
 
-**Do not use "curly" quotes and quotation marks.** On MDN Web Docs, we only use straight quotes and apostrophes.
+Do not use "curly" quotes and quotation marks. On MDN Web Docs, we only use straight quotes and apostrophes. This is because:
 
-There are a couple of reasons for this.
-
-1. We need to choose one or the other for consistency.
-2. If curly quotes or apostrophes make their way into code snippets—even inline ones—readers may copy and paste them, expecting them to function (which they will not).
-
+- We need to choose one or the other for consistency.
+- If curly quotes or apostrophes make their way into code snippets—even inline ones—readers may copy and paste them, expecting them to function (which they will not).
+>
 - **Correct**: Please don't use "curly quotes."
 - **Incorrect**: Please don't use “curly quotes.”
 
 #### Commas
 
-##### Comma after introductory clauses
+##### After introductory clauses
 
-<!-- TBD -->
-##### Comma before conjunctions
+An introductory clause is a dependent clause, usually found at the beginning of a sentence. Use a comma after an introductory clause to separate it from the following independent clause.
 
-<!-- TBD -->
+- **Correct**: In this example, you will see how to use a comma.
+- **Incorrect**: In this example you will see how to use a comma.
+>
+- **Correct**: If you are looking for guidelines, you have come to the right place.
+- **Incorrect**: If you are looking for guidelines you have come to the right place.
+>
+- **Correct**: On mobile platforms, you tend to get a numeric keypad for entering data.
+- **Incorrect**: On mobile platforms you tend to get a numeric keypad for entering data.
 
-##### Comma before `such as`
+##### Before conjunctions
 
-<!-- TBD -->
-
-##### Serial comma
-
-The serial (also known as "Oxford") comma is the comma that appears before the conjunction in a series of three or more items.
+The serial comma (also known as "the Oxford comma") is the comma that appears before the conjunction in a series of three or more items. On MDN Web Docs, we use the serial comma. Commas also separate each item of the list.
 
 - **Correct**: I will travel on trains, planes, and automobiles.
 - **Incorrect**: I will travel on trains, planes and automobiles.
+
+Don't use comma before "and" and "or" in a list that contains two items.
+
+- **Correct**: My dog is cute and smart.
+- **Incorrect**: My dog is cute, and smart.
+
+Use comma before the conjunctions "and", "but", and "or" if they join two independent clauses. However, if the sentence is becoming very long or complex with the conjunction, consider rewriting it as two sentences.
+
+- **Correct**: You can perform this step, but you need to pay attention to the file setting.
+- **Incorrect**: You can perform this step but you need to pay attention to the file setting.
+>
+- **Correct**: My father is strict but loving.
+- **Incorrect**: My father is strict, but loving.
+
+##### Before "that" and "which"
+
+A restrictive clause is essential for the meaning of the sentence and does not need commas to be set off from the remaining sentence. A restrictive clause is usually introduced by "that" and **should not** be preceded by a comma.
+
+- **Correct**: We have put together a course that includes all the essential information you need to work towards your goal.
+- **Incorrect**: We have put together a course, that includes all the essential information you need to work towards your goal.
+
+A nonrestrictive clause provides additional information and is not essential to the meaning of the sentence. A nonrestrictive clause is usually introduced by "which" and should be preceded by a comma.
+
+- **Correct**: You write a policy, which is an allowed list of origins for each feature.
+- **Incorrect**: You write a policy, which is an allowed list of origins for each feature.
+
+##### Before "such as"
+
+If "such as" is part of a nonrestrictive clause and the remaining sentence is an independent clause, use comma before "such as".
+
+- **Correct**: The Array object has methods for manipulating arrays in various ways, such as joining, reversing, and sorting them.
+- **Incorrect**: The Array object has methods for manipulating arrays in various ways such as joining, reversing, and sorting them.
+
+The example below shows when not to use comma with "such as". Here the clause containing "such as" is essential for the meaning of the sentence.
+
+- **Correct**: Web applications are becoming more powerful by adding features such as audio and video manipulation and allowing access to raw data using WebSockets.
+- **Incorrect**: Web applications are becoming more powerful by adding features, such as audio and video manipulation, and allowing access to raw data using WebSockets.
 
 #### Hyphens
 
@@ -449,32 +476,67 @@ Each example should be preceded by text explaining what the example does and any
 
 ### External links
 
-<!-- TBD -->
+External links are allowed on MDN Web Docs in specific situations. Use the guidelines described in this section to decide whether or not it is okay to include an external link on MDN Web Docs. Your pull request to add an external link will be rejected if it does not meet the guidelines described here.
+
+In general, if you’re considering adding an external link, you need to ensure that there is minimal risk of the following:
+
+- Broken or outdated links
+- Appearance of endorsement, especially for commercial products or services
+- Attempt to use MDN Web Docs to distribute spam
+
+> **Note:** Before adding an external link, consider cross-referencing content within MDN Web Docs. Internal links are easier to maintain and make the entirety of MDN Web Docs more valuable to readers.
+
+#### Good external links
+
+Good external links take readers to resources that are relevant, durable, and widely trusted. You should prefer adding links to external content that is:
+
+- Unique or indispensable (e.g., an IETF RFC)
+- Necessary for attribution, citation, or acknowledgement (e.g., as part of a Creative Commons attribution)
+- More likely to be maintained for the topic than incorporating such content on MDN Web Docs itself (e.g., a vendor’s release notes)
+- Open source or community-driven, like MDN Web Docs itself
+
+#### Poor external links
+
+Poor external links lack relevance, maintainability, accessibility, or otherwise put up barriers to readers. Avoid adding links to external content that is:
+
+- Generic or non-specific (e.g., a vendor’s home page, instead of the related documentation)
+- Ephemeral or unmaintained (e.g., a one-time announcement)
+- Self-linking or self-promotional (e.g., the author’s own work off of MDN Web Docs)
+- Paywalled (e.g., an expensive course beyond the reach of hobbyists, students, or readers living in lower-income countries)
+- Inaccessible (e.g., a video without captions)
+
+#### Links that are self-promotional or spam
+
+While a personal blog post, conference talk, or GitHub repository has value, linking to your own resources can create the appearance of a conflict of interest. Think twice before linking to resources that you have a business or personal connection with.
+
+**If you have a business or personal relationship with the target of a link, you must disclose that relationship in your pull request. Failure to do so may imperil your continued participation with MDN Web Docs.**
+
+Sometimes such links are relevant and appropriate. For example, if you’re the editor of a specification and you’re contributing to documentation related to that specification, then linking to that specification is expected and acceptable. But you must disclose the relationship between you and the link.
 
 ### Heading levels
 
 When a new paragraph starts a new section, a header should be added.
-Use heading levels in decreasing order: {{HTMLElement("h2")}} then {{HTMLElement("h3")}} then {{HTMLElement("h4")}}, without skipping levels.
+Use these markdown heading levels in decreasing order without skipping levels: `##`, then `###`, and then `####`; these translate to the HTML {{HTMLElement("h2")}}, {{HTMLElement("h3")}}, and {{HTMLElement("h4")}} tags, respectively.
 
-H2 is the highest level allowed because H1 is reserved for the page title.
+`##` is the highest level allowed because `#` is reserved for the page title.
 If you need more than three or four levels of headers, consider breaking up the article into several smaller articles with a landing page.
 
 Keep the following dos and don'ts in mind while creating headings for subsections:
 
 - **Don't create single subsections.** Don't subdivide a topic into a single subtopic.
-  It's either two subheadings or more, or none at all.
+  It's either two subheadings or more or none at all.
 - **Don't use styles and classes within headings.** This includes the {{HTMLElement("code")}} element for code terms.
-  So don't make a heading "Using the `SuperAmazingThing` interface".
+  So don't format the heading as "Using the `SuperAmazingThing` interface".
   It should instead just be "Using the SuperAmazingThing interface".
-- **Avoid using macros within headings** (except for certain macros that are specifically designed to be used in headings).
-- **Don't create "bumping heads."** These are headings followed immediately by a subheading, with no content text in between.
-  This doesn't look good, and leaves readers without any explanatory text at the beginning of the outer section.
+- **Avoid using macros within headings.** (except for certain macros that are specifically designed to be used in headings)
+- **Don't create "bumping heads".** These are headings followed immediately by a subheading, with no content text in between.
+  This doesn't look good and leaves readers without any explanatory text at the beginning of the outer section.
 
 ### Lists
 
-Lists should be formatted and structured uniformly across all pages.
+Lists should be formatted and structured consistently across all pages.
 Individual list items should be written with suitable punctuation, regardless of the list format.
-However, depending on the type of the list you are creating, you will want to adjust your writing as described in the sections below.
+However, depending on the type of list you are creating, you will want to adjust your writing as described in the sections below. In both the cases, include a lead-in sentence that describes the information in the list.
 
 #### Bulleted lists
 
@@ -483,15 +545,15 @@ Each item in the list should follow a similar sentence structure.
 Phrases and sentences in bulleted lists should include standard punctuation.
 A period must appear at the end of each sentence in a bulleted list, including the item's final sentence, just as would be expected in a paragraph.
 
-An example of a correctly structured bulleted list:
+This is an example of a correctly structured bulleted list.
 
-In this example we should include:
+In this example, we should include:
 
 - A condition, with a brief explanation.
 - A similar condition, with a brief explanation.
 - Yet another condition, with some further explanation.
 
-Note how the same sentence structure repeats from bullet to bullet.
+Notice how the same sentence structure repeats from bullet to bullet.
 In this example, each bullet point states a condition followed by a comma and a brief explanation, and each item in the list ends with a period.
 
 #### Numbered lists
@@ -500,7 +562,7 @@ Numbered lists are used primarily to enumerate steps in a set of instructions.
 Because instructions can be complex, clarity is a priority, especially if the text in each list item is lengthy.
 As with bulleted lists, follow standard punctuation usage.
 
-An example of a correctly structured numbered list:
+This is an example of a correctly structured numbered list.
 
 In order to correctly structure a numbered list, you should:
 
@@ -513,8 +575,8 @@ In order to correctly structure a numbered list, you should:
 This is an example of writing a closing explanation.
 We have created a short numbered list that provides instructive steps to produce a numbered list with the correct formatting.
 
-Note how the items in numbered lists read like short paragraphs.
-Because numbered lists are routinely used for instructional purposes, or to walk someone through an orderly procedure, be sure to keep each item focused: one numbered item per step.
+Notice how the items in numbered lists read like short paragraphs.
+Because numbered lists are routinely used for instructional purposes or to walk someone through an orderly procedure, be sure to keep each item focused: one numbered item per step.
 
 ### Subpages
 
@@ -538,7 +600,7 @@ The page title (which is displayed at the top of the page and in the search resu
 
 #### Capitalization style for titles
 
-Page titles and section headings should use sentence-style capitalization (only capitalize the first word and proper nouns) rather than headline-style capitalization:
+On MDN Web Docs, page titles and section headings should use sentence-style capitalization (only capitalize the first word and proper nouns) rather than headline-style capitalization:
 
 - **Correct**: "A new method for creating JavaScript rollovers"
 - **Incorrect**: "A New Method for Creating JavaScript Rollovers"
@@ -549,13 +611,27 @@ We're gradually getting to them.
 
 #### Guidelines for writing titles
 
-<!-- TBD -->
+Deciding what you want to document and how you will structure that content is one of the first steps in writing. Writing a table of contents can help you decide how you want to order information. Cover simple concepts first and then go on to more complicated and advanced concepts. Cover conceptual information first and then move on to action-oriented topics.
+
+Keep these guidelines in mind when writing titles for a page and sections or subsections:
+
+- **Go higher to lower:** As stated in the [Heading levels](<!-- link TBD-->) section, go from higher `##` to lower `####`, without skipping levels. Use higher level headings for broader introductory titles, and use more specific titles as you progress to lower-level headings.
+- **Group logically:** Make sure all related subsections are grouped together logically under a higher level heading. Naming titles of various sections can help you in this exercise.
+- **Keep titles short:** Shorter titles are easier to scan in text and in table of contents.
+- **Keep titles specific:** Use the title to convey the specific information that will be covered in the section. For example, for a section introducing HTML elements, use the title "HTML elements" instead of "Introduction" or "Overview".
+- **Keep titles focussed:** Use the title to convey one objective—a single idea or a concept that will be covered in that section. For that purpose, try not to use the conjunction "and" in a title.
+- **Use parallel construction:** Use similar language for titles at the same heading level. For example, if a `###` heading level title uses gerunds, that is, words ending in "-ing", such as "Installing", then try to write all titles at that heading level using gerunds. If a title starts with an imperative verb, such as "Use", "Configure", then write all titles at that heading level starting with an imperative verb.
+- **Avoid common term in lower-level heading:** Do not repeat the text in the title of a higher-level heading in lower-level titles. For example, in a section titled "Commas", name the title of a subsection "After introductory clauses" instead of "Commas introductory clauses".
+- **Don't begin with article:** Avoid starting titles with articles "a", "an", or "the".
+- **Add lead-in information:** After a title, add some introductory text to explain what will be covered in the section.
+
 #### Page titles vs. slugs
 
 Page slugs should be kept short.
-When creating a new level of hierarchy, the new level's component in the slug should just be a word or two.
 
-Page titles, on the other hand, may be as long as you like, within reason, and they should be descriptive.
+When creating a new level of hierarchy, the new level's component in the slug should just be a word or two. Page titles, on the other hand, may be as long as you like, within reason, and they should be descriptive.
+
+<!-- TBD - add an example-->
 
 ## See also
 
