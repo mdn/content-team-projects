@@ -1,8 +1,12 @@
 # Users & Teams
 
-There's lots of different collaborators and partners within the mdn organisation on GitHub.
+There's lots of different collaborators and partners within the mdn organisation on GitHub. [A list can be found here](https://github.com/orgs/mdn/people).
 
-_(We don't need to list them, people can just go to contributors)_
+
+We're currently reviewing the organizations users and teams and will update this page in due course.
+
+
+#### Notes
 
 Main teams.
 

@@ -1,1 +1,0 @@
-# Contributor spotlight here
