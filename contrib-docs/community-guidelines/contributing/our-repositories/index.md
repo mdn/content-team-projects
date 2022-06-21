@@ -1,3 +1,5 @@
+# Core
+
 # MDN Core
 
 [MDN Web Docs](https://developer.mozilla.org) is a complex project with lots of moving parts. It's a good idea to get familiar with the projects different repositories, as there is quite a few bits of the content that aren’t stored in the page sources and instead come from somewhere else.
@@ -15,3 +17,20 @@ This article acts as a quick guide to finding the different repositories (repos)
 - **Workflows**: <https://github.com/mdn/workflows>
   A growing collection of reusable GitHub Actions for use on MDN Web Docs repositories.
 - **Translated content**: <https://github.com/mdn/translated-content>. This is where localized content lives. Go here if you want to help translate pages into any of our [actively maintained locales](https://github.com/mdn/translated-content#locales).
+
+
+# Code example
+
+# Code examples and demos
+
+[//]: # "TODO: UPDATE WITH REPO TRIAGE"
+
+The MDN Web Docs GitHub org contains a huge number of example repos. These generally contain free-standing code examples that are often linked to from our pages, but occasionally you’ll find one of these examples embedded into a page using a macro call like this — `{{EmbedGHLiveSample("css-examples/learn/tasks/grid/grid1.html", '100%', 700)}}`.
+
+Always remember, if you are updating the code on any given page, you'll need to update the corresponding example repo as well.
+
+- **css-examples** [css-examples](https://github.com/mdn/css-examples) ...
+- **js-examples** [js-examples](https://github.com/mdn/js-examples) ...
+- **html-examples** [html-examples](https://github.com/mdn/html-examples) ...
+- **web-audio-examples** [webaudio-examples](https://github.com/mdn/webaudio-examples).
+- **web-component-examples** [css-examples](https://github.com/mdn/js-examples) ...
