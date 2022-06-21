@@ -68,7 +68,6 @@ We do not document a new technology if it:
 - Not a web-exposed technology and/or is completely proprietary.
 - Already showing signs of being deprecated or superseded by a similar feature.
 
-
 ## Topics that don't belong on MDN Web Docs
 
 In general, anything that isn't an open web standard does not belong on MDN Web Docs. Spam (commercial advertisement) and other irrelevant content will never be accepted into the site. Contributors who keep trying to submit spam may be banned from MDN at the discretion of Mozilla MDN staff.
@@ -93,7 +92,8 @@ Pages might be deleted when:
 - Articles containing content that is inappropriate for MDN Web Docs.
 - Sections of MDN Web Docs which are not focused on open web technologies and are a maintenance burden.
 
-For more information on how to delete documents, please see the [Creating, moving and deleting pages guide]()
+For more information on _how_ to delete documents, please see the [Creating, moving and deleting pages guide]()
+
 
 ## Types of documents on MDN Web Docs
 
