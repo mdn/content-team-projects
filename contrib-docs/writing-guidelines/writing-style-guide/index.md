@@ -23,15 +23,9 @@ Keep the target audience for the content you are writing in mind. For example, a
 
 The three Cs of good writing are writing clearly, concisely, and consistently.
 
-- **Clear:** Ensure that your writing is clear and simple. In general, use active voice and unambiguous pronouns. Write short sentences, sticking to one idea per sentence. Define new terms, keeping the target audience in, before using them.
-- **Concise:** When writing any document, it's important to know how much to say. If you provide excessive detail, the page becomes tedious to read and it will rarely be used.
-- **Consistent:** Ensure you use the same verbiage consistently throughout the page and across multiple pages.
-
-TBD: Provide enough quality material for search engines to adequately analyze and rank the page. To learn more about this, see [How to write for SEO on MDN](https://developer.mozilla.org/en-US/docs/MDN/Contribute/Howto/Write_for_SEO). <!-- content and link to be revisited -->
-
-### Consider the length of the article
-
-Overly-short content pages are hard to find. If a page is "thin"—that is, the content is too short—it may not be indexed properly (or at all) by search engines. As a guiding principle, the body text should be at least 250–300 words. Don't artificially inflate a page, but treat this guideline as a minimum target length when possible.
+- **Clear**: Ensure that your writing is clear and simple. In general, use active voice and unambiguous pronouns. Write short sentences, sticking to one idea per sentence. Define new terms, keeping the target audience in, before using them.
+- **Concise**: When writing any document, it's important to know how much to say. If you provide excessive detail, the page becomes tedious to read and it will rarely be used.
+- **Consistent**: Ensure you use the same verbiage consistently throughout the page and across multiple pages.
 
 ### Include relevant examples
 
@@ -43,15 +37,11 @@ Make sure that the opening paragraph(s) before the first heading adequately summ
 
 In a guide or tutorial, the introductory paragraph(s) should inform the reader about the topics that will be covered as well as the prerequisite knowledge the reader is expected to have, if any. The opening paragraph should mention the technologies and/or APIs that are being documented or discussed, with links to the related information, and it should offer hints to situations in which the article's contents might be useful.
 
-#### Example: Introduction too short
-
-This example of an introduction is far too short. It leaves out too much information, such as what it means exactly to "stroke" text, where the text is drawn, and so forth.
+- **Example of short introduction** This example of an introduction is far too short. It leaves out too much information, such as what it means exactly to "stroke" text, where the text is drawn, and so forth.
 
 > **`CanvasRenderingContext2D.strokeText()`** draws a string.
 
-#### Example: Introduction too long
-
-Here, we've updated the introduction, but now it's far too long.
+- **Example of long introduction**: This example has an updated introduction, but now it's far too long.
 Too much detail is included, and the text delves too deeply into describing other methods and properties.
 
 Instead, the introduction should focus on the `strokeText()` method and should refer to the appropriate guides where the other details are described.
@@ -73,9 +63,7 @@ Instead, the introduction should focus on the `strokeText()` method and should r
 >
 > You can call the **`fillText()`** method to draw a string's characters as filled with color instead of only drawing the outlines of the characters.
 
-#### Example: Improved and better introduction
-
-Here we see a much better overview for the `strokeText()` method.
+- **Example of an appropriate introduction**: Here we see a much better overview for the `strokeText()` method.
 
 > The {{domxref("CanvasRenderingContext2D")}} method **`strokeText()`**, part of the [Canvas 2D API](/en-US/docs/Web/API/Canvas_API), strokes—that is, draws the outlines of—the characters of a specified string, anchored at the position indicated by the given X and Y coordinates.
 > The text is drawn using the context's current {{domxref("CanvasRenderingContext2D.font", "font")}}, and is justified and aligned according to the {{domxref("CanvasRenderingContext2D.textAlign", "textAlign")}}, {{domxref("CanvasRenderingContext2D.textBaseline", "textBaseline")}}, and {{domxref("CanvasRenderingContext2D.direction", "direction")}} properties.
@@ -99,31 +87,63 @@ For example, if you are talking about the actions of a specific man, using "he"/
 
 Let's look at the following examples:
 
-> _A confirmation dialog asks the user if he wants to allow the web page to make use of his webcam._
->
-> _A confirmation dialog asks the user if she wants to allow the web page to make use of her webcam._
+- **Incorrect**: "A confirmation dialog asks the user if he wants to allow the web page to make use of his webcam."
+- **Incorrect**: "A confirmation dialog asks the user if she wants to allow the web page to make use of her webcam."
 
 Both versions are gender-specific. To fix this, use gender-neutral pronouns like so:
 
-> _A confirmation dialog asks the user if they want to allow the web page to make use of their webcam._
+- **Correct**: "A confirmation dialog asks the user if they want to allow the web page to make use of their webcam."
 
-> **Note:** MDN Web Docs allow the use of this very common syntax (which is controversial among usage authorities) to make up for the lack of a neutral gender in English.
+> **Note:** MDN Web Docs allows the use of this very common syntax (which is controversial among usage authorities) to make up for the lack of a neutral gender in English.
 >
 > The use of the third-person plural as a gender neutral pronoun (that is, using "they," "them", "their," and "theirs") is an accepted practice, commonly known as "[singular 'they'](https://en.wikipedia.org/wiki/Singular_they)."
 
-Another option is to make the users plural:
+Another option is to make the users plural, like so:
 
-> _A confirmation dialog asks the users if they want to allow the web page to make use of their webcams._
+- **Correct**: "A confirmation dialog asks the users if they want to allow the web page to make use of their webcams."
 
 The best solution, of course, is to rewrite and eliminate the pronouns:
 
-> _A confirmation dialog requesting the user's permission for webcam access appears._
->
-> _A confirmation dialog box that asks the user for permission to use the webcam appears._
+- **Correct**: "A confirmation dialog requesting the user's permission for webcam access appears."
+- **Correct**: "A confirmation dialog box that asks the user for permission to use the webcam appears."
 
 This last example of dealing with the problem is arguably better.
 Not only is it grammatically more correct, but removes some of the complexity associated with dealing with genders across different languages that may have wildly different gender rules.
 This solution can make translation easier for both readers and translators.
+
+### Write with SEO in mind
+
+While the primary goal of any writing on MDN Web Docs should always be to explain and inform about open web technology so developers can quickly learn to do what they want or to find the little details they need to know in order to perfect their code, it's important that they be able to _find_ the material we write. We can achieve this by keeping Search Engine Optimization ({{Glossary("SEO")}}) in mind while writing.
+
+This section covers the standard practices, recommendations, and requirements for content to help ensure that search engines can easily categorize and index our material to ensure that users can easily reach what they need. The SEO guidelines includes ensuring that each page writers and editors work on is reasonably well-designed, written, and marked up to give search engines the context and clues they need to properly index articles.
+
+The following checklist is good to keep in mind while writing and reviewing content to help ensure that the page and its neighbors will be indexed properly by search engines:
+
+- **Ensure that pages aren't too similar**: If the content on different pages is similar textually, search engines will assume that the pages are about the same thing even if they aren't.
+  For example, if an interface has the properties `width` and `height`, it's easy for the text to be surprisingly similar on the two pages documenting these two properties, with just a few words swapped out and using the same example. This makes it hard for search engines to know which is which, and they wind up sharing page rank, resulting in both being harder to find than they ought to be.
+  
+  It's important, then, to ensure that every page has its own content. Here are some suggestions to help you accomplish that:
+
+  - **Explain more unique concepts**: Consider use cases where there might be more differences than one would think. For instance, in the case of documenting `width` and `height` properties, perhaps write about the ways horizontal space and vertical space are used differently, and provide a discussion about the appropriate concepts. Perhaps you can mention the use of `width` in terms of making room for a sidebar, while using `height` to handle vertical scrolling or footers. Including information about accessibility issues is a useful and important idea as well.
+  - **Use different examples**: Examples in these situations are often even more similar than the body text because the examples may use both (or all) of the similar methods or properties to begin with, thereby requiring no real changes when reused. So throw out the example and write a new one, or at least provide multiple examples, with at least some of them different.
+  - **Add descriptions for examples**: Both an overview of what the example does as well as coverage of how it works, in an appropriate level of detail given the complexity of the topic and the target audience, should be included.
+
+  The easiest way to avoid being overly similar is of course to write each article from scratch if time allows.
+
+- **Ensure that pages aren't too short**: If the content on a page is too little (called "thin pages" in SEO parlance), search engines will not catalog such pages accurately (or at all). Overly-short content pages are hard to find. As a guiding principle, ensure that pages on MDN Web Docs are not shorter than around 300 words or so. Don't artificially inflate a page, but treat this guideline as a minimum target length when possible.
+
+  Here are some basic guidelines to help you create pages that have enough content to be properly searchable without resorting to cluttering them up with unnecessary text:
+
+  - **Avoid stubs**: Obviously, if the article is a stub or is missing content, add it. We try to avoid outright "stub" pages on MDN web Docs, although they do exist, but there are plenty of pages that are missing large portions of their content.
+  - **Review page structure**: Review the page to ensure that it's structured properly for the [type of page](/en-US/docs/MDN/Structures/Page_types) it is <!--link to be revised-->. Be sure every section that it should have is present and has appropriate content.
+  - **Ensure completeness**: Review sections to ensure that no information is missing. Ensure that all parameters listed and explained. Ensure that any exceptions are covered — this is a particularly common place where content is missing.
+  - **Ensure all concepts are fully fleshed-out**: It's easy to give a quick explanation of something, but make sure that all the nuances are covered. Are there special cases? Are there any known restrictions that the reader might need to know about?
+  - **Add examples**: There should be examples covering all parameters or at least the parameters (or properties, or attributes) that users from the beginner-through-intermediate range are likely to use, as well as any advanced ones that require extra explanation. Each example should be preceded with an overview of what the example will do, what additional knowledge might be needed to understand it, and so forth. After the example (or interspersed among pieces of the example) should be text explaining how the code works. Don't skimp on the details and the handling of errors in examples. Keep in mind that users _will_ copy and paste your example to use in their own projects, and your code _will_ wind up used on production sites! See [code examples](/en-US/docs/MDN/Structures/Code_examples) and our [code example guidelines](/en-US/docs/MDN/Guidelines/Code_guidelines) for more useful information <!--links to be revised-->.
+  - **Explain use cases**: If there are particularly common use cases for the feature being described, talk about them! Instead of assuming that a user will figure out that the method being documented can be used to solve a common development problem, actually add a section about that use case with an example and text explaining how the example works.
+  - **Add image information**: Include proper {{htmlattrxref("alt", "img")}} text on all images and diagrams. This text, as well as captions on tables and other figures, counts because spiders can't crawl images, and so `alt` text tells search engine crawlers what content the embedded media contains.
+  > **Note:** It is not recommended to include too many keywords or keywords not related to the feature in an attempt to manipulate search engine rankings; this type of behavior is easy to spot and tends to be penalized.
+  > Likewise, **do not** add repetitive, unhelpful material or blobs of keywords within the actual page, in an attempt to improve the page's size and search ranking. This does more harm than good, both to content readability and to our search results.
+  - **Focus on topic content**: With Google's Hummingbird update in 2013 <!--do we need to retain this-->, there has been an increasing focus on the use of natural language to convey information. This means that it is far better to write content around the topic of the page than a specific keyword. It is highly likely that there will be many keywords you could include for a given topic; in fact, many SEOs compile a list of 5-100 different keywords (varying between short, medium, and long-tail keywords) to include within their article, depending on the length. Doing so will diversify your wording, leading to less repetition.
 
 ## Writing style
 
@@ -149,9 +169,7 @@ Use full capitals and delete periods in all abbreviations and acronyms, includin
 
 #### Latin abbreviations
 
-##### In notes and parentheses
-
-- Common Latin abbreviations (etc., i.e., e.g.) may be used in parenthetical expressions and notes.
+- **In notes and parentheses**: Common Latin abbreviations (etc., i.e., e.g.) may be used in parenthetical expressions and notes.
   Use periods in these abbreviations, followed by a comma or other appropriate punctuation.
 
   - **Correct**: Web browsers (e.g., Firefox) can be used ...
@@ -159,16 +177,15 @@ Use full capitals and delete periods in all abbreviations and acronyms, includin
   - **Incorrect**: Web browsers, e.g. Firefox, can be used ...
   - **Incorrect**: Web browsers, (eg: Firefox) can be used ...
 
-##### In running text
-
-- In regular text (i.e., text outside of notes or parentheses), use the English equivalent of the abbreviation.
+- **In running text**: In regular text (i.e., text outside of notes or parentheses), use the English equivalent of the abbreviation.
 
   - **Correct**: ... web browsers, and so on.
   - **Incorrect**: ... web browsers, etc.
+  >
   - **Correct**: Web browsers such as Firefox can be used ...
   - **Incorrect**: Web browsers e.g. Firefox can be used ...
 
-##### Meanings and English equivalents of Latin abbreviations
+The following table summarizes the meanings and English equivalents of Latin abbreviations:
 
 | Abbrev | Latin            | English                 |
 | ------ | ---------------- | ----------------------- |
@@ -213,7 +230,7 @@ For example, "<kbd>Enter</kbd>" not "<kbd>ENTER</kbd>".
 The only exception is that you can use "<kbd>ESC</kbd>" to abbreviate the "<kbd>Escape</kbd>" key.
 
 Certain words should always be capitalized (such as trademarks which include capital letters), or words derived from the name of a person (unless it's being used within code, and code's syntax requires lower-casing).
-Some examples:
+Some examples include:
 
 - Boolean (named for English mathematician and logician {{interwiki("wikipedia", "George Boole")}})
 - JavaScript (a trademark of Oracle Corporation, it should always be written as trademarked)
@@ -225,40 +242,29 @@ Our writing style tends to be casual, so you should feel free to use contraction
 
 ### Numbers and numerals
 
-#### Commas
+- **Commas**: In running text, use commas only in five-digit and larger numbers.
 
-In running text, use commas only in five-digit and larger numbers.
+  - **Correct**: 4000; 54,000
+  - **Incorrect**: 4,000; 54000
 
-- **Correct**: 4000; 54,000
-- **Incorrect**: 4,000; 54000
+- **Dates**: For dates (not including dates in code samples), use the format "January 1, 1990".
 
-#### Dates
+  - **Correct**: February 24, 2006
+  - **Incorrect**: February 24th, 2006; 24 February, 2006; 24/02/2006
 
-For dates (not including dates in code samples) use the format "January 1, 1990".
+  Alternately, you can use the YYYY/MM/DD format.
+  - **Correct**: 2006/02/24
+  - **Incorrect**: 02/24/2006; 24/02/2006; 02/24/06
 
-- **Correct**: February 24, 2006
-- **Incorrect**: February 24th, 2006; 24 February, 2006; 24/02/2006
+- **Decades**: Use the format "1990s". Don't use an apostrophe.
 
-Alternately, you can use the YYYY/MM/DD format.
+  - **Correct**: 1990s
+  - **Incorrect**: 1990's
 
-- **Correct**: 2006/02/24
-- **Incorrect**: 02/24/2006; 24/02/2006; 02/24/06
+- **Plurals of numerals**: Add "s". Don't use an apostrophe.
 
-#### Decades
-
-For decades, use the format "1990s".
-Don't use an apostrophe.
-
-- **Correct**: 1990s
-- **Incorrect**: 1990's
-
-#### Plurals of numerals
-
-For plurals of numerals add "s".
-Don't use an apostrophe.
-
-- **Correct**: 486s
-- **Incorrect**: 486's
+  - **Correct**: 486s
+  - **Incorrect**: 486's
 
 ### Pluralization
 
@@ -267,7 +273,7 @@ Use English-style plurals, not the Latin- or Greek-influenced forms.
 - **Correct**: syllabuses, octopuses
 - **Incorrect**: syllabi, octopi
 
-### Punctuation
+### Punctuations
 
 #### Apostrophes and quotation marks
 
@@ -281,62 +287,54 @@ Do not use "curly" quotes and quotation marks. On MDN Web Docs, we only use stra
 
 #### Commas
 
-##### After introductory clauses
+- **After introductory clauses**: An introductory clause is a dependent clause, usually found at the beginning of a sentence. Use a comma after an introductory clause to separate it from the following independent clause.
 
-An introductory clause is a dependent clause, usually found at the beginning of a sentence. Use a comma after an introductory clause to separate it from the following independent clause.
+  - **Correct**: "In this example, you will see how to use a comma."
+  - **Incorrect**: "In this example you will see how to use a comma."
+  >
+  - **Correct**: "If you are looking for guidelines, you have come to the right place."
+  - **Incorrect**: "If you are looking for guidelines you have come to the right place."
+  >
+  - **Correct**: "On mobile platforms, you tend to get a numeric keypad for entering data."
+  - **Incorrect**: "On mobile platforms you tend to get a numeric keypad for entering data."
 
-- **Correct**: In this example, you will see how to use a comma.
-- **Incorrect**: In this example you will see how to use a comma.
->
-- **Correct**: If you are looking for guidelines, you have come to the right place.
-- **Incorrect**: If you are looking for guidelines you have come to the right place.
->
-- **Correct**: On mobile platforms, you tend to get a numeric keypad for entering data.
-- **Incorrect**: On mobile platforms you tend to get a numeric keypad for entering data.
+- **Before conjunctions**: The serial comma (also known as "the Oxford comma") is the comma that appears before the conjunction in a series of three or more items. On MDN Web Docs, we use the serial comma. Commas also separate each item of the list.
 
-##### Before conjunctions
+  - **Correct**: "I will travel on trains, planes, and automobiles."
+  - **Incorrect**: "I will travel on trains, planes and automobiles."
 
-The serial comma (also known as "the Oxford comma") is the comma that appears before the conjunction in a series of three or more items. On MDN Web Docs, we use the serial comma. Commas also separate each item of the list.
+  Don't use comma before "and" and "or" in a list that contains two items.
 
-- **Correct**: I will travel on trains, planes, and automobiles.
-- **Incorrect**: I will travel on trains, planes and automobiles.
+  - **Correct**: "My dog is cute and smart."
+  - **Incorrect**: "My dog is cute, and smart."
 
-Don't use comma before "and" and "or" in a list that contains two items.
+  Use comma before the conjunctions "and", "but", and "or" if they join two independent clauses. However, if the sentence is becoming very long or complex with the conjunction, consider rewriting it as two sentences.
 
-- **Correct**: My dog is cute and smart.
-- **Incorrect**: My dog is cute, and smart.
+  - **Correct**: "You can perform this step, but you need to pay attention to the file setting."
+  - **Incorrect**: "You can perform this step but you need to pay attention to the file setting."
+  >
+  - **Correct**: "My father is strict but loving."
+  - **Incorrect**: "My father is strict, but loving."
 
-Use comma before the conjunctions "and", "but", and "or" if they join two independent clauses. However, if the sentence is becoming very long or complex with the conjunction, consider rewriting it as two sentences.
+- **Before "that" and "which"**: A restrictive clause is essential for the meaning of the sentence and does not need commas to be set off from the remaining sentence. A restrictive clause is usually introduced by "that" and **should not** be preceded by a comma.
 
-- **Correct**: You can perform this step, but you need to pay attention to the file setting.
-- **Incorrect**: You can perform this step but you need to pay attention to the file setting.
->
-- **Correct**: My father is strict but loving.
-- **Incorrect**: My father is strict, but loving.
+  - **Correct**: "We have put together a course that includes all the essential information you need to work towards your goal."
+  - **Incorrect**: "We have put together a course, that includes all the essential information you need to work towards your goal."W
 
-##### Before "that" and "which"
+  A nonrestrictive clause provides additional information and is not essential to the meaning of the sentence. A nonrestrictive clause is usually introduced by "which" and should be preceded by a comma.
 
-A restrictive clause is essential for the meaning of the sentence and does not need commas to be set off from the remaining sentence. A restrictive clause is usually introduced by "that" and **should not** be preceded by a comma.
+  - **Correct**: "You write a policy, which is an allowed list of origins for each feature."
+  - **Incorrect**: "You write a policy, which is an allowed list of origins for each feature."
 
-- **Correct**: We have put together a course that includes all the essential information you need to work towards your goal.
-- **Incorrect**: We have put together a course, that includes all the essential information you need to work towards your goal.
+- **Before "such as"**: If "such as" is part of a nonrestrictive clause and the remaining sentence is an independent clause, use comma before "such as".
 
-A nonrestrictive clause provides additional information and is not essential to the meaning of the sentence. A nonrestrictive clause is usually introduced by "which" and should be preceded by a comma.
+  - **Correct**: "The Array object has methods for manipulating arrays in various ways, such as joining, reversing, and sorting them."
+  - **Incorrect**: "The Array object has methods for manipulating arrays in various ways such as joining, reversing, and sorting them."
 
-- **Correct**: You write a policy, which is an allowed list of origins for each feature.
-- **Incorrect**: You write a policy, which is an allowed list of origins for each feature.
+  The example below shows when not to use comma with "such as". Here the clause containing "such as" is essential for the meaning of the sentence.
 
-##### Before "such as"
-
-If "such as" is part of a nonrestrictive clause and the remaining sentence is an independent clause, use comma before "such as".
-
-- **Correct**: The Array object has methods for manipulating arrays in various ways, such as joining, reversing, and sorting them.
-- **Incorrect**: The Array object has methods for manipulating arrays in various ways such as joining, reversing, and sorting them.
-
-The example below shows when not to use comma with "such as". Here the clause containing "such as" is essential for the meaning of the sentence.
-
-- **Correct**: Web applications are becoming more powerful by adding features such as audio and video manipulation and allowing access to raw data using WebSockets.
-- **Incorrect**: Web applications are becoming more powerful by adding features, such as audio and video manipulation, and allowing access to raw data using WebSockets.
+  - **Correct**: "Web applications are becoming more powerful by adding features such as audio and video manipulation and allowing access to raw data using WebSockets."
+  - **Incorrect**: "Web applications are becoming more powerful by adding features, such as audio and video manipulation, and allowing access to raw data using WebSockets."
 
 #### Hyphens
 
@@ -458,8 +456,7 @@ They also ensure correct linking to detailed documentation.
 - Attribute definitions
   - : Use the [`htmlattrdef`](https://github.com/mdn/yari/blob/main/kumascript/macros/htmlattrdef.ejs) macro (e.g., `\{{htmlattrdef("type")}})` for the definition term, so that it can be linked to from other pages easily by using the [`htmlattrxref`](https://github.com/mdn/yari/blob/main/kumascript/macros/htmlattrxref.ejs) macro (e.g., `\{{htmlattrxref("type","element")}}`) to reference attribute definitions.
 - Attribute values
-  - : Use the "Inline Code" style to apply `<code>` to attribute values, and don't use quotation marks around string values, unless needed by the syntax of a code sample.
-    **For example:** "When the `type` attribute of an `<input>` element is set to `email` or `tel` ..."
+  - : Use the "Inline Code" style to apply `<code>` to attribute values, and don't use quotation marks around string values, unless needed by the syntax of a code sample. For example, "When the `type` attribute of an `<input>` element is set to `email` or `tel` ...".
 
 #### Syntax highlighting
 
@@ -547,11 +544,11 @@ A period must appear at the end of each sentence in a bulleted list, including t
 
 This is an example of a correctly structured bulleted list.
 
-In this example, we should include:
-
-- A condition, with a brief explanation.
-- A similar condition, with a brief explanation.
-- Yet another condition, with some further explanation.
+  > In this example, we should include:
+  >
+  > - A condition, with a brief explanation.
+  > - A similar condition, with a brief explanation.
+  > - Yet another condition, with some further explanation.
 
 Notice how the same sentence structure repeats from bullet to bullet.
 In this example, each bullet point states a condition followed by a comma and a brief explanation, and each item in the list ends with a period.
@@ -564,16 +561,15 @@ As with bulleted lists, follow standard punctuation usage.
 
 This is an example of a correctly structured numbered list.
 
-In order to correctly structure a numbered list, you should:
+  > In order to correctly structure a numbered list, you should:
+  >
+  > 1. Open with a heading or brief paragraph to introduce the instructions. It's important to provide the user with context before beginning the instructions.
+  > 2. Start creating your instructions, and keep each step in its own numbered item.
+  >   Your instructions may be quite extensive, so it is important to write clearly and use correct punctuation.
+  > 3. After you have finished your instructions, follow the numbered list with a brief closing summary or explanation about the expected outcome upon completion.
 
-1. Open with a heading or brief paragraph to introduce the instructions.
-   It's important to provide the user with context before beginning the instructions.
-2. Start creating your instructions, and keep each step in its own numbered item.
-   Your instructions may be quite extensive, so it is important to write clearly and use correct punctuation.
-3. After you have finished your instructions, follow the numbered list with a brief closing summary or explanation about the expected outcome upon completion.
-
-This is an example of writing a closing explanation.
-We have created a short numbered list that provides instructive steps to produce a numbered list with the correct formatting.
+The following is an example of writing a closing explanation for the above list:
+  > We have created a short numbered list that provides instructive steps to produce a numbered list with the correct formatting.
 
 Notice how the items in numbered lists read like short paragraphs.
 Because numbered lists are routinely used for instructional purposes or to walk someone through an orderly procedure, be sure to keep each item focused: one numbered item per step.
@@ -615,15 +611,15 @@ Deciding what you want to document and how you will structure that content is on
 
 Keep these guidelines in mind when writing titles for a page and sections or subsections:
 
-- **Go higher to lower:** As stated in the [Heading levels](<!-- link TBD-->) section, go from higher `##` to lower `####`, without skipping levels. Use higher level headings for broader introductory titles, and use more specific titles as you progress to lower-level headings.
-- **Group logically:** Make sure all related subsections are grouped together logically under a higher level heading. Naming titles of various sections can help you in this exercise.
-- **Keep titles short:** Shorter titles are easier to scan in text and in table of contents.
-- **Keep titles specific:** Use the title to convey the specific information that will be covered in the section. For example, for a section introducing HTML elements, use the title "HTML elements" instead of "Introduction" or "Overview".
-- **Keep titles focussed:** Use the title to convey one objective—a single idea or a concept that will be covered in that section. For that purpose, try not to use the conjunction "and" in a title.
-- **Use parallel construction:** Use similar language for titles at the same heading level. For example, if a `###` heading level title uses gerunds, that is, words ending in "-ing", such as "Installing", then try to write all titles at that heading level using gerunds. If a title starts with an imperative verb, such as "Use", "Configure", then write all titles at that heading level starting with an imperative verb.
-- **Avoid common term in lower-level heading:** Do not repeat the text in the title of a higher-level heading in lower-level titles. For example, in a section titled "Commas", name the title of a subsection "After introductory clauses" instead of "Commas introductory clauses".
-- **Don't begin with article:** Avoid starting titles with articles "a", "an", or "the".
-- **Add lead-in information:** After a title, add some introductory text to explain what will be covered in the section.
+- **Go higher to lower**: As stated in the [Heading levels](<!-- link TBD-->) section, go from higher `##` to lower `####`, without skipping levels. Use higher level headings for broader introductory titles, and use more specific titles as you progress to lower-level headings.
+- **Group logically**: Make sure all related subsections are grouped together logically under a higher level heading. Naming titles of various sections can help you in this exercise.
+- **Keep titles short**: Shorter titles are easier to scan in text and in table of contents.
+- **Keep titles specific**: Use the title to convey the specific information that will be covered in the section. For example, for a section introducing HTML elements, use the title "HTML elements" instead of "Introduction" or "Overview".
+- **Keep titles focussed**: Use the title to convey one objective—a single idea or a concept that will be covered in that section. For that purpose, try not to use the conjunction "and" in a title.
+- **Use parallel construction**: Use similar language for titles at the same heading level. For example, if a `###` heading level title uses gerunds, that is, words ending in "-ing", such as "Installing", then try to write all titles at that heading level using gerunds. If a title starts with an imperative verb, such as "Use", "Configure", then write all titles at that heading level starting with an imperative verb.
+- **Avoid common term in lower-level heading**: Do not repeat the text in the title of a higher-level heading in lower-level titles. For example, in a section titled "Commas", name the title of a subsection "After introductory clauses" instead of "Commas introductory clauses".
+- **Don't begin with article**: Avoid starting titles with articles "a", "an", or "the".
+- **Add lead-in information**: After a title, add some introductory text to explain what will be covered in the section.
 
 #### Page titles vs. slugs
 
@@ -659,51 +655,3 @@ If you're interested in improving your writing and editing skills, you may find 
 - [Bob's quick guide to the apostrophe, you idiots](https://www.angryflower.com/bobsqu.gif) (funny)
 - [Merriam-Webster's Concise Dictionary of English Usage](https://www.amazon.com/Merriam-Websters-Concise-Dictionary-English-Usage/dp/B004L2KNI2) (Amazon link): Scholarly but user-friendly, evidence-based advice; very good for non-native speakers, especially for preposition usage.
 - [English Language and Usage StackExchange](https://english.stackexchange.com/): Question and answer site for English language usage.
-
-<!-- ------ -->
-<!--from: https://developer.mozilla.org/en-US/docs/MDN/Contribute/Howto/Write_for_SEO -->
-<!-- TBD -->
-This guide covers our standard practices, recommendations, and requirements for content to help ensure that search engines can easily categorize and index our material in order to ensure that users can easily reach what they need.
-
-## Introduction
-
-While the primary goal of any writing on MDN should always be to explain and inform about open web technology so developers can quickly learn to do what they want, or to find the little details they need to know in order to perfect their code, it's important that they be able to _find_ the material we write.
-
-Since most readers reach content on MDN through search engines, as writers, we have to keep that in mind while we work. To do that, we are establishing a selection of "SEO guidelines," to help writers and editors on MDN ensure that each page they work on is reasonably well designed, written, and marked up to give search engines the context and clues they need to properly index articles.
-
-## SEO checklist
-
-The following is a list of things you should check while writing and reviewing content to help ensure that the page and its neighbors will be indexed properly by search engines.
-
-- Make sure the page's contents are [different enough from other pages](/en-US/docs/MDN/Contribute/Howto/Write_for_SEO#ensure_pages_aren't_too_similar) that search engines don't assume they're about the same thing.
-- [Avoid pages that are too short](/en-US/docs/MDN/Contribute/Howto/Write_for_SEO#avoid_pages_that_are_too_short). Articles that are too short (called "thin pages" in SEO parlance) are difficult to catalog accurately. Whenever possible, pages on MDN should avoid being shorter than around 300 words or so.
-
-## Ensure pages aren't too similar
-
-Each article should be as unique as possible. Articles that look similar to one another textually will wind up being considered to be about roughly the same thing, even if they aren't. For example, if an interface has the properties `width` and `height`, it's easy for the text to be surprisingly similar, with just a few words swapped out, and using the same example. This makes it hard for search engines to know which is which, and they wind up sharing page rank, resulting in both being harder to find than they ought to be.
-
-Understandably, writers confronted with two related properties like `width` and `height` (or any other set of functionally related features) are tempted to write the article on `width`, then copy that article and paste it into the one on `height`, replacing a few words. Done!
-
-Unfortunately, the result is two pages that, as far as search engines are concerned, may as well be the same thing.
-
-It's important, then, to ensure that every page has its own content. Here are some suggestions to help you accomplish that:
-
-- Consider use cases where there might be more differences than one would think. For instance, in the case of `width` and `height`, perhaps consider ways horizontal space and vertical space are used differently, and provide a discussion about the appropriate concepts. Perhaps you mention the use of width in terms of making room for a sidebar, while using height to handle vertical scrolling or footers or similar. Including information about accessibility issues is a useful and important idea as well.
-- Use entirely different examples on each page. Examples in these situations are often even more similar than the body text, since the examples may use both (or all) of the similar methods or properties to begin with, thereby requiring no real changes when reused. So throw out the example and write a new one, or at least provide multiple examples, with at least some of them different.
-- Include descriptions of each example. Both an overview of what the example does as well as coverage of how it works, in an appropriate level of detail given the complexity of the topic and the target audience, should be included.
-
-The easiest way to avoid being overly similar is of course to write each article from scratch if time allows.
-
-## Avoid pages that are too short
-
-Articles that are too short (called "thin pages" in SEO parlance) are difficult to catalog accurately. Whenever possible, pages on MDN should avoid being shorter than around 300 words or so. Here are some basic guidelines to help you create pages that have enough content to be properly searchable without resorting to cluttering them up with unnecessary text.
-
-- Obviously, if the article is a stub, or is missing material, add it. We try to avoid outright "stub" pages on MDN, although they do exist, but there are plenty of pages that are missing large portions of their content.
-- Generally review the page to ensure that it's structured properly for the [type of page](/en-US/docs/MDN/Structures/Page_types) it is. Be sure every section that it should have is present and has appropriate content.
-- Make sure every section is complete and up-to-date, with no information missing. Are all parameters listed and explained? Make sure any exceptions are covered (this is a particularly common place where content is missing).
-- Be sure everything is fully fleshed-out. It's easy to give a quick explanation of something, but make sure that all the nuances are covered. Are there special cases? Known restrictions that the reader might need to know about?
-- There should be examples covering all parameters or at least the parameters (or properties, or attributes) that users from the beginner through intermediate range are likely to use, as well as any advanced ones that require extra explanation. Each example should be preceded with an overview of what the example will do, what additional knowledge might be needed to understand it, and so forth. After the example (or interspersed among pieces of the example) should be text explaining how the code works. Don't skimp on the details and the handling of errors in examples; readers _will_ copy and paste your example to use in their own projects, and your code _will_ wind up used on production sites! See [code examples](/en-US/docs/MDN/Structures/Code_examples) and our [code example guidelines](/en-US/docs/MDN/Guidelines/Code_guidelines) for more useful information.
-- If there are particularly common use cases for the feature being described, talk about them! Instead of assuming the reader will figure out that the method being documented can be used to solve a common development problem, actually add a section about that use case with an example and text explaining how the example works.
-- Include proper {{htmlattrxref("alt", "img")}} text on all images and diagrams; this text counts, as do captions on tables and other figures, because spiders can't crawl images, and so {{htmlattrxref("alt", "img")}} text tells search engine crawlers what content the embedded media contains. Note: it is not best practice to include too many keywords, or feature unrelated keywords in an attempt to manipulate search engine rankings; this type of behavior is easy to spot and tends to be penalized.
-- Likewise, do *not* descend into adding repetitive, unhelpful material, or blobs of keywords within the actual page, in an attempt to improve the page's size and search ranking. This does more harm than good, both to content readability and to our search results.
-- With Google's Hummingbird update in 2013, there has been an increasing focus on the use of natural language to convey information. This means that it is far better to write content around the topic of the article, than a specific keyword. It is highly likely that there will be many keywords you could include for a given topic; in fact, many SEOs compile a list of 5-100 different keywords (varying between short, medium, and long-tail keywords) to include within their article, depending on the length. Doing so will diversify your wording, leading to less repetition.
