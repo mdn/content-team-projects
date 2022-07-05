@@ -1,53 +1,13 @@
 ---
-title: How to write for MDN
-slug: MDN/Writing_guidelines/How_to_write
+title: 'Experimental, deprecated and obsolete'
+slug: MDN/Writing_guide/Experimental_deprecated_obsolete
 page-type: mdn-writing-guide
 tags:
   - meta
   - writing-guide
 ---
+
 {{MDNSidebar}}
-
-This section of MDN Web Docs writing guidelines contains all the information on *how* to approach **writing** for MDN. The different types of pages we have, what is included in them, how we use markdown, code example guidelines and more.
-
-To find out more about _how to contribute_ (which happens through GitHub) please refer to our [community guidelines]().
-
-> **Note:** All the way through this section we assume you have read the contribution guidelines and are familiar with the mdn/content repository and how to use git and GitHub.
-
-MDN Web Docs content is primarily held in the mdn/content repository and each page is written in a markdown format with frontmatter information at the top.
-
-Some content is held in other repositories; primarily code examples (such as interactive-examples at the top of pages). Anything related to the platform (the website itself and _not_ the articles) is held within the mdn/yari repository.
-
-If you're looking for the place to update the browser compatibility tables, that data is held with mdn/browser-compat-data repository.
-
-
-
-
-## Editing an existing page
-
-To edit a page, you need to find the page source in our [content](https://github.com/mdn/content) repo. The easiest way to find it is to navigate to the page you want to edit, go to the bottom of the page, and click on the "Source on GitHub" link.
-
-Once you've found the source to edit, go to our README and work through our [Making contributions](https://github.com/mdn/content#making-contributions) guide.
-
-### Preview changes
-
-If you are editing the page locally, to see what your changes look like you can go to the content repo folder, execute the CLI command `yarn start`, go to `localhost:5042` in your browser, and navigate to page and view it. Enter the title in the search box to find it easily. The previewed page will update in the browser live as you edit the source.
-
-### Tags
-
-You can add or remove tags, which describe the page's content and purpose, in the "tags" list at the top of the page source. See [How to properly tag pages](/en-US/docs/MDN/Contribute/Howto/Tag), for information on which tags to apply.
-
-### Attach files
-
-To attach a file to your article, you just need to include it in the same directory as the article's `index.html` file, and include it in your page, typically via an `<a>` element.
-
-## Creating a new page
-
-To create a new page, see our [Adding a new document](https://github.com/mdn/content#adding-a-new-document) instructions.
-
-## See also
-
-- [MDN style guide](/en-US/docs/MDN/Guidelines/Writing_style_guide)
 
 ## Terms used on MDN Web Docs to label a technology
 
@@ -118,31 +78,6 @@ If the item was implemented in any release version of any one or more browsers b
 - At some point in the future, a decision may be made to actually remove the item from the documentation; we don't normally do this but if the item was especially unutilized or uninteresting, we may decide to do so.
 - Update any relevant entries in the [Browser Compatibility Data repo](https://github.com/mdn/browser-compat-data) to reflect the obsolescence of the item(s) affected.
 
-
-
-
-
-
-## Copying content from elsewhere
-<!---not sure if this still holds true--->
-
-Often, there is useful content about a topic somewhere on the web besides MDN Web Docs.
-However, copying such content can be fraught with difficulties, both technical and legal.
-
-On the technical level, search engines typically penalize a site in their rankings for reproducing content available elsewhere.
-Therefore, it is preferable to have original content on MDN Web Docs to enhance the search engine ranking of MDN Web Docs' content.
-You can link to the existing content from MDN Web Docs.
-
-On the legal level, you must be authorized to contribute the content, and it must be licensed and attributed in a way that is compatible with [MDN's license](/en-US/docs/MDN/About#copyrights_and_licenses). <!--- links to be revisited--->
-
-- **If you created the existing content** (for your own purposes and not as work-for-hire), and you are willing to contribute it to MDN Web Docs under MDN's license, this is the easiest case, and you are free to contribute the content.
-- **If the copyright for the content belongs to someone else**, it must be licensed and attributed compatibly with MDN's license.
-  It is often not easy for someone who is not a lawyer to determine what licenses are compatible.
-  To be on the safe side, contact a member of the [MDN Web Docs team](https://github.com/mdn/mdn-community/discussions), who may consult Mozilla's Legal team for guidance if necessary.
-  
-
-
-
 ### If the item was implemented in a browser without a flag
 
 If the item was implemented in one or more release builds of browsers without requiring a preference or a flag, mark the item as **deprecated**, as follows:
@@ -168,6 +103,7 @@ For example, as of Jan 2019, the [`inputmode`](/en-US/docs/Web/HTML/Global_attri
 > **Warning:** Specification conflict: The WHATWG specification lists `inputmode`(https://html.spec.whatwg.org/multipage/interaction.html#attr-inputmode) and modern browsers are working towards supporting it.
 > The [W3C HTML 5.2 spec](https://html.spec.whatwg.org/multipage/index.html#contents), however, no longer lists it (i.e. marks it as obsolete).
 > You should consider the WHATWG definition as correct, until a consensus is reached.
+
 
 
 

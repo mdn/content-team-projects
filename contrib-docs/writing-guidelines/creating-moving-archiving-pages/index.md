@@ -171,6 +171,6 @@ yarn content delete "Mozilla/Add-ons/WebExtensions/Debugging_(before_Firefox_50)
 
 Removing content from MDN will inevitably result in updating existing content as well, as a lot of articles link to others, the removed content will be referenced elsewhere.
 
-Adding the redirect will mitigate the impact of removing content, however it's best practice to edit content to reflect the change.
+Adding the redirect will mitigate the impact of removing content, however it's best practice to edit content to reflect the change and include the edits alongside the removal pr.
 
 
