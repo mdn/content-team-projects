@@ -28,8 +28,6 @@ Useful resources for any of the documentation include:
 
 It can also be wise to try and find someone to help answer questions. This can be the specification authors, or the engineers who implement browser features. 
 
-<!-- TODO expand on this -->
-
 ### Reading specifications
 
 This can feel a little alien to start, but the more you do it the more you get used to it. Here are some good links to help you get started:

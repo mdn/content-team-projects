@@ -58,4 +58,25 @@ If you have any questions or concerns about anything discussed here, please [con
 
 The rights in the trademarks, logos, and service marks of the Mozilla Foundation, as well as the look and feel of this website, are not licensed under the Creative Commons license, and to the extent they are works of authorship (like logos and graphic design), they are not included in the work that is licensed under those terms. If you use the text of documents, and wish to also use any of these rights, or if you have any other questions about complying with our licensing terms for this collection, you should contact the Mozilla Foundation here: [licensing@mozilla.org](mailto:licensing@mozilla.org "mailto:licensing@mozilla.org").
 
+## Content from elsewhere
+
+Often, there is useful content about a topic somewhere on the web besides MDN Web Docs.
+However, copying such content can be fraught with difficulties, both technical and legal.
+
+On the technical level, search engines typically penalize a site in their rankings for reproducing content available elsewhere.
+Therefore, it is preferable to have original content on MDN Web Docs to enhance the search engine ranking of MDN Web Docs' content.
+You can link to the existing content from MDN Web Docs.
+
+On the legal level, you must be authorized to contribute the content, and it must be licensed and attributed in a way that is compatible with MDN's license.
+
+- **If you created the existing content** (for your own purposes and not as work-for-hire), and you are willing to contribute it to MDN Web Docs under MDN's license, this is the easiest case, and you are free to contribute the content.
+- **If the copyright for the content belongs to someone else**, it must be licensed and attributed compatibly with MDN's license.
+  It is often not easy for someone who is not a lawyer to determine what licenses are compatible.
+  To be on the safe side, contact a member of the [MDN Web Docs team](https://github.com/mdn/mdn-community/discussions), who may consult Mozilla's Legal team for guidance if necessary.
+  
+
+
+
+
+
 
