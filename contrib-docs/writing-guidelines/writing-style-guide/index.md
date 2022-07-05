@@ -29,7 +29,10 @@ The three Cs of good writing are writing clearly, concisely, and consistently.
 
 ### Include relevant examples
 
-In general, add examples or real-life scenarios to better explain the content you are writing. This helps readers to consume conceptual information in a more tangible and practical way.
+In general, add examples or real-life scenarios to better explain the content you are writing. This helps readers to understand conceptual and procedural information in a more tangible and practical way.
+
+You should use examples to clarify what every parameter is used for and to clarify any edge cases that may exist.
+You can also use examples to demonstrate solutions for common tasks and solutions to problems that may arise.
 
 ### Provide a descriptive introduction
 
@@ -39,36 +42,36 @@ In a guide or tutorial, the introductory paragraph(s) should inform the reader a
 
 - **Example of short introduction** This example of an introduction is far too short. It leaves out too much information, such as what it means exactly to "stroke" text, where the text is drawn, and so forth.
 
-> **`CanvasRenderingContext2D.strokeText()`** draws a string.
+  > **`CanvasRenderingContext2D.strokeText()`** draws a string.
 
 - **Example of long introduction**: This example has an updated introduction, but now it's far too long.
 Too much detail is included, and the text delves too deeply into describing other methods and properties.
 
-Instead, the introduction should focus on the `strokeText()` method and should refer to the appropriate guides where the other details are described.
-
-> When called, the Canvas 2D API method **`CanvasRenderingContext2D.strokeText()`** strokes the characters in the specified string beginning at the coordinates specified, using the current pen color.
-> In the terminology of computer graphics, "stroking" text means to draw the outlines of the glyphs in the string without filling in the contents of each character with color.
->
-> The text is drawn using the context's current font as specified in the context's {{domxref("CanvasRenderingContext2D.font", "font")}} property.
->
-> The placement of the text relative to the specified coordinates are determined by the context's `textAlign`, `textBaseline`, and `direction` properties.
-> `textAlign` controls the placement of the string relative to the X coordinate specified; if the value is `"center"`, then the string is drawn starting at `x - (stringWidth / 2)`, placing the specified X-coordinate in the middle of the string.
-> If the value is `"left"`, the string is drawn starting at the specified value of `x`.
-> And if `textAlign` is `"right"`, the text is drawn such that it ends at the specified X-coordinate.
->
-> (etc etc etc...)
->
-> You can, optionally, provide a fourth parameter that lets you specify a maximum width for the string, in pixels.
-> If you provide this parameter, the text is compressed horizontally or scaled (or otherwise adjusted) to fit inside a space that wide when being drawn.
->
-> You can call the **`fillText()`** method to draw a string's characters as filled with color instead of only drawing the outlines of the characters.
+  > Instead, the introduction should focus on the `strokeText()` method and should refer to the appropriate guides where the other details are described.
+  >
+  > When called, the Canvas 2D API method **`CanvasRenderingContext2D.strokeText()`** strokes the characters in the specified string beginning at the coordinates specified, using the current pen color.
+  > In the terminology of computer graphics, "stroking" text means to draw the outlines of the glyphs in the string without filling in the contents of each character with color.
+  >
+  > The text is drawn using the context's current font as specified in the context's {{domxref("CanvasRenderingContext2D.font", "font")}} property.
+  >
+  > The placement of the text relative to the specified coordinates are determined by the context's `textAlign`, `textBaseline`, and `direction` properties.
+  > `textAlign` controls the placement of the string relative to the X coordinate specified; if the value is `"center"`, then the string is drawn starting at `x - (stringWidth / 2)`, placing the specified X-coordinate in the middle of the string.
+  > If the value is `"left"`, the string is drawn starting at the specified value of `x`.
+  > And if `textAlign` is `"right"`, the text is drawn such that it ends at the specified X-coordinate.
+  >
+  > (etc etc etc...)
+  >
+  > You can, optionally, provide a fourth parameter that lets you specify a maximum width for the string, in pixels.
+  > If you provide this parameter, the text is compressed horizontally or scaled (or otherwise adjusted) to fit inside a space that wide when being drawn.
+  >
+  > You can call the **`fillText()`** method to draw a string's characters as filled with color instead of only drawing the outlines of the characters.
 
 - **Example of an appropriate introduction**: Here we see a much better overview for the `strokeText()` method.
 
-> The {{domxref("CanvasRenderingContext2D")}} method **`strokeText()`**, part of the [Canvas 2D API](/en-US/docs/Web/API/Canvas_API), strokes—that is, draws the outlines of—the characters of a specified string, anchored at the position indicated by the given X and Y coordinates.
-> The text is drawn using the context's current {{domxref("CanvasRenderingContext2D.font", "font")}}, and is justified and aligned according to the {{domxref("CanvasRenderingContext2D.textAlign", "textAlign")}}, {{domxref("CanvasRenderingContext2D.textBaseline", "textBaseline")}}, and {{domxref("CanvasRenderingContext2D.direction", "direction")}} properties.
->
-> For more details and further examples, see {{SectionOnPage("/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Drawing_graphics", "Text")}} in the Learning Area as well as our main article on the subject, [Drawing text](/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_text).
+  > The {{domxref("CanvasRenderingContext2D")}} method **`strokeText()`**, part of the [Canvas 2D API](/en-US/docs/Web/API/Canvas_API),   strokes—that is, draws the outlines of—the characters of a specified string, anchored at the position indicated by the given X and Y   coordinates.
+  > The text is drawn using the context's current {{domxref("CanvasRenderingContext2D.font", "font")}}, and is justified and aligned according   to the {{domxref("CanvasRenderingContext2D.textAlign", "textAlign")}}, {{domxref("CanvasRenderingContext2D.textBaseline", "textBaseline")}},   and {{domxref("CanvasRenderingContext2D.direction", "direction")}} properties.
+  >
+  > For more details and further examples, see {{SectionOnPage("/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Drawing_graphics", "Text")}} in the Learning Area as well as our main article on the subject, [Drawing text](/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_text).
 
 ### Use inclusive language
 
@@ -94,9 +97,7 @@ Both versions are gender-specific. To fix this, use gender-neutral pronouns like
 
 - **Correct**: "A confirmation dialog asks the user if they want to allow the web page to make use of their webcam."
 
-> **Note:** MDN Web Docs allows the use of this very common syntax (which is controversial among usage authorities) to make up for the lack of a neutral gender in English.
->
-> The use of the third-person plural as a gender neutral pronoun (that is, using "they," "them", "their," and "theirs") is an accepted practice, commonly known as "[singular 'they'](https://en.wikipedia.org/wiki/Singular_they)."
+> **Note:** MDN Web Docs allows the use of third-person plural, commonly known as "[singular 'they'](https://en.wikipedia.org/wiki/Singular_they).". The gender-neutral pronouns include "they," "them", "their," and "theirs".
 
 Another option is to make the users plural, like so:
 
@@ -138,11 +139,11 @@ The following checklist is good to keep in mind while writing and reviewing cont
   - **Review page structure**: Review the page to ensure that it's structured properly for the [type of page](/en-US/docs/MDN/Structures/Page_types) it is <!--link to be revised-->. Be sure every section that it should have is present and has appropriate content.
   - **Ensure completeness**: Review sections to ensure that no information is missing. Ensure that all parameters listed and explained. Ensure that any exceptions are covered — this is a particularly common place where content is missing.
   - **Ensure all concepts are fully fleshed-out**: It's easy to give a quick explanation of something, but make sure that all the nuances are covered. Are there special cases? Are there any known restrictions that the reader might need to know about?
-  - **Add examples**: There should be examples covering all parameters or at least the parameters (or properties, or attributes) that users from the beginner-through-intermediate range are likely to use, as well as any advanced ones that require extra explanation. Each example should be preceded with an overview of what the example will do, what additional knowledge might be needed to understand it, and so forth. After the example (or interspersed among pieces of the example) should be text explaining how the code works. Don't skimp on the details and the handling of errors in examples. Keep in mind that users _will_ copy and paste your example to use in their own projects, and your code _will_ wind up used on production sites! See [code examples](/en-US/docs/MDN/Structures/Code_examples) and our [code example guidelines](/en-US/docs/MDN/Guidelines/Code_guidelines) for more useful information <!--links to be revised-->.
+  - **Add examples**: There should be examples covering all parameters or at least the parameters (or properties, or attributes) that users from the beginner-through-intermediate range are likely to use, as well as any advanced ones that require extra explanation. Each example should be preceded with an overview of what the example will do, what additional knowledge might be needed to understand it, and so forth. After the example (or interspersed among pieces of the example) should be text explaining how the code works. Don't skimp on the details and the handling of errors in examples. Keep in mind that users _will_ copy and paste your example to use in their own projects, and your code _will_ wind up used on production sites! See our [code example guidelines](/en-US/docs/MDN/Guidelines/Code_guidelines) for more useful information. <!--link to be revised-->
   - **Explain use cases**: If there are particularly common use cases for the feature being described, talk about them! Instead of assuming that a user will figure out that the method being documented can be used to solve a common development problem, actually add a section about that use case with an example and text explaining how the example works.
   - **Add image information**: Include proper {{htmlattrxref("alt", "img")}} text on all images and diagrams. This text, as well as captions on tables and other figures, counts because spiders can't crawl images, and so `alt` text tells search engine crawlers what content the embedded media contains.
-  > **Note:** It is not recommended to include too many keywords or keywords not related to the feature in an attempt to manipulate search engine rankings; this type of behavior is easy to spot and tends to be penalized.
-  > Likewise, **do not** add repetitive, unhelpful material or blobs of keywords within the actual page, in an attempt to improve the page's size and search ranking. This does more harm than good, both to content readability and to our search results.
+    > **Note:** It is not recommended to include too many keywords or keywords not related to the feature in an attempt to manipulate search engine rankings; this type of behavior is easy to spot and tends to be penalized.
+    > Likewise, **do not** add repetitive, unhelpful material or blobs of keywords within the actual page, in an attempt to improve the page's size and search ranking. This does more harm than good, both to content readability and to our search results.
   - **Focus on topic content**: With Google's Hummingbird update in 2013 <!--do we need to retain this-->, there has been an increasing focus on the use of natural language to convey information. This means that it is far better to write content around the topic of the page than a specific keyword. It is highly likely that there will be many keywords you could include for a given topic; in fact, many SEOs compile a list of 5-100 different keywords (varying between short, medium, and long-tail keywords) to include within their article, depending on the length. Doing so will diversify your wording, leading to less repetition.
 
 ## Writing style
@@ -361,14 +362,14 @@ Do not use variant spellings.
 Use "elements" to refer to HTML and XML elements, rather than "tags".
 In addition, they should almost always be wrapped in "<>", and should be in the {{HTMLElement("code")}} style.
 
-When you reference a given element for the first time in a section, you should use the [`HTMLElement`](https://github.com/mdn/yari/blob/main/kumascript/macros/HTMLElement.ejs) macro to create a link to the documentation for the element (unless you're writing within that element's reference document page).
+When you reference a given element for the first time in a section, you should use the [`HTMLElement`](https://github.com/mdn/yari/blob/main/kumascript/macros/HTMLElement.ejs) <!--this link should point to the macro's documentation--> macro to create a link to the documentation for the element (unless you're writing within that element's reference document page).
 
 - **Correct**: the {{HTMLElement("span")}} element
 - **Incorrect**: the span tag
 
 #### Parameters vs. arguments
 
-The preferred term on MDN is **parameters**.
+The preferred term on MDN Web Docs is **parameters**.
 Please avoid the term "arguments" for consistency whenever possible.
 
 #### User interface actions
@@ -376,8 +377,8 @@ Please avoid the term "arguments" for consistency whenever possible.
 In task sequences, describe user interface actions using the imperative mood.
 Identify the user interface element by its label and type.
 
-- **Correct**: Click the Edit button.
-- **Incorrect**: Click Edit.
+- **Correct**: "Click the Edit button."
+- **Incorrect**: "Click Edit."
 
 ### Voice
 
@@ -390,86 +391,19 @@ This section lists the guidelines to follow for components such as headings, not
 
 ### Code examples
 
-Each piece of code should include an explanation of how it works.
-Keep in mind that it may make sense to break up a large piece of code into smaller portions so they can be described individually.
+A page on MDN Web Docs can contain more than one code example.
 
-The text following each piece of code should explain anything relevant, using an appropriate level of detail:
+The following are some recommended practices when writing a code example for MDN Web Docs:
 
-- If the code is very simple and doesn't really use anything directly related to the API being documented, you need only give a quick summary of what it is and why it's there.
-- If the code is intricate, uses the API being documented, or is technically creative, you should provide a more detailed explanation.
-
-When adding [live samples](/en-US/docs/MDN/Structures/Live_samples), it's helpful to be aware that all of the {{HTMLElement("pre")}} blocks in the area that contains the sample are concatenated together before running the example, which lets you break any or all of the HTML, CSS, and JavaScript into multiple segments, each optionally with its own descriptions, headings, and so forth.
+- Each piece of example code should include:
+  - A short `###` (H3) heading to describe the scenario being demonstrated through the code example. For example, "Using offset printing" and "Reverting to style in previous layer".
+  - A short description preceding the example code that states the specifics of the example to which you want to draw reader's attention. For example, "In the example below, two cascade layers are defined in the CSS, `base` and `special`. "
+  - An explanation after the example code that describes the result and how the code works.
+- If you are working with a large piece of example code, it may make sense to break it up into smaller logical parts so that they can be described individually.
+- When adding [live samples](/en-US/docs/MDN/Structures/Live_samples) <!--link to be revised-->, it's helpful to be aware that all of the {{HTMLElement("pre")}} blocks in the area that contains the sample are concatenated together before running the example, which lets you break any or all of the HTML, CSS, and JavaScript into multiple segments, each optionally with its own descriptions, headings, and so forth.
 This makes documenting code incredibly powerful and flexible.
 
-> **Note:** This section deals with the styling/formatting of code as it appears on an MDN article.
-> If you want guidelines on actually writing code examples, see our [Code sample guidelines](/en-US/docs/MDN/Guidelines/Code_guidelines).
-
-#### Formatting code samples
-
-Use two spaces per tab in all code examples.
-Indent the code cleanly, with open-brace ("`{`") characters on the same line as the statement that opens the block.
-For example:
-
-```js
-if (condition) {
-  /* handle the condition */
-} else {
-  /* handle the "else" case */
-}
-```
-
-Long lines shouldn't be allowed to stretch off horizontally to the extent that they require horizontal scrolling to read.
-Instead, break long lines at natural breaking points.
-Some examples follow:
-
-```js
-if (class.CONDITION || class.OTHER_CONDITION || class.SOME_OTHER_CONDITION
-       || class.YET_ANOTHER_CONDITION ) {
-  /* something */
-}
-
-var toolkitProfileService = Components.classes["@mozilla.org/toolkit/profile-service;1"]
-                           .createInstance(Components.interfaces.nsIToolkitProfileService);
-```
-
-#### Inline code formatting
-
-Use the {{HTMLElement("code")}} tags to mark up function names, variable names, and method names.
-For example: "the `frenchText()` function".
-
-**Method names should be followed by a pair of parentheses.** For example, `doSomethingUseful()`.
-The parentheses help differentiate methods from other code terms.
-
-#### Styling mentions of HTML elements
-
-There are specific rules to follow when writing about HTML elements.
-These rules produce consistent descriptions of elements and their components.
-They also ensure correct linking to detailed documentation.
-
-- Element names
-  - : Use the [`HTMLElement`](https://github.com/mdn/yari/blob/main/kumascript/macros/HTMLElement.ejs) macro, which creates a link to the page for that element.
-    For example, writing `\{{HTMLElement("title")}}` produces "{{HTMLElement("title")}}".
-    If you don't want to create a link, **enclose the name in angle brackets** and use the "Inline Code" style (e.g., `<title>`).
-- Attribute names
-  - : Use "Inline Code" style to put attribute names in `code font`.
-    Additionally, put them in **`bold face`** when the attribute is mentioned in association with an explanation of what it does, or the first time it is used in the article.
-- Attribute definitions
-  - : Use the [`htmlattrdef`](https://github.com/mdn/yari/blob/main/kumascript/macros/htmlattrdef.ejs) macro (e.g., `\{{htmlattrdef("type")}})` for the definition term, so that it can be linked to from other pages easily by using the [`htmlattrxref`](https://github.com/mdn/yari/blob/main/kumascript/macros/htmlattrxref.ejs) macro (e.g., `\{{htmlattrxref("type","element")}}`) to reference attribute definitions.
-- Attribute values
-  - : Use the "Inline Code" style to apply `<code>` to attribute values, and don't use quotation marks around string values, unless needed by the syntax of a code sample. For example, "When the `type` attribute of an `<input>` element is set to `email` or `tel` ...".
-
-#### Syntax highlighting
-
-A line or multiple lines of code should be formatted using [syntax highlighting](/en-US/docs/MDN/Contribute/Markdown_in_MDN#example_code_blocks) rather than the {{HTMLElement("code")}} element.
-
-### Examples
-
-It's important to ensure that you use examples to clarify what every parameter is used for, and to clarify any edge cases that may exist.
-You should also use examples to demonstrate solutions for common tasks, and you should use examples to demonstrate solutions to problems that may arise.
-
-In general it is expected that most of the pages will include examples, and that most of them will include more than one example.
-
-Each example should be preceded by text explaining what the example does and anything the reader should know before beginning to read or try out the example.
+To learn about how to style or format code examples for MDN Web Docs, see [Guidelines for styling code examples](/en-US/docs/MDN/Guidelines/Code_guidelines). <!--link to be revised-->
 
 ### External links
 
@@ -528,6 +462,15 @@ Keep the following dos and don'ts in mind while creating headings for subsection
 - **Avoid using macros within headings.** (except for certain macros that are specifically designed to be used in headings)
 - **Don't create "bumping heads".** These are headings followed immediately by a subheading, with no content text in between.
   This doesn't look good and leaves readers without any explanatory text at the beginning of the outer section.
+
+### Images and other media
+
+If you include images or other media in on a page, follow these guidelines:
+
+- Make sure the media license allows you to use them. Try to use media that has a very permissive license such as [CC0](https://creativecommons.org/share-your-work/public-domain/cc0/) or at least one that is compatible with our general content license —  [Creative Commons Attribution-ShareAlike license](https://creativecommons.org/licenses/by-sa/2.5/) (CC-BY-SA).
+- For images, run them through <https://tinypng.com> or <https://imageoptim.com> to reduce the page weight.
+- For `SVG`, run the code through [SVGOMG](https://jakearchibald.github.io/svgomg/), and ensure that the `SVG` file has an empty line at the end of the file.
+- When displaying icons on a page (e.g., via {{cssxref("background-image")}}), use icons from the [mdn-dinocons](https://github.com/mdn/mdn-dinocons) repository, where appropriate, and try to match their style in other cases. <!--this is not valid anymore, the repo has been archived. do we want to point readers to another resource?-->
 
 ### Lists
 
