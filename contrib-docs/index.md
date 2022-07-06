@@ -1,6 +1,14 @@
-# Homepage
+---
+title: Contributing to MDN Web Docs
+slug: MDN/Contribute
+page-type: <!--TBD-->
+tags:
+  - meta
+  - <!--TBD-->
+---
+{{MDNSidebar}}
 
-## MDN Web Docs is Open Source
+## MDN Web Docs is open source
 
 MDN Web Docs is an open-source, collaborative project that documents web platform technologies, including [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), and [Web APIs](https://developer.mozilla.org/en-US/docs/Web/API). We also provide extensive [learning resources](https://developer.mozilla.org/en-US/docs/Learn) for early-stage developers and students.
 
@@ -14,7 +22,7 @@ While there are a [number of licenses](https://opensource.org/licenses) that are
 
 - [How to write for MDN Web Docs](how-to-write/index.md)
 - [Community guidelines](community-guidelines/index.md)
-- [Open Source etiquette](community-guidelines/open-source-etiquette/index.md)
+- [Open-source etiquette](community-guidelines/open-source-etiquette/index.md)
 
 ## Code of conduct
 
@@ -22,11 +30,12 @@ By participating in and contributing to our projects and discussions, you acknow
 
 ## Get in touch
 
-You can communicate with the MDN Web Docs team and community through our [Matrix channel](https://chat.mozilla.org/#/room/#mdn:mozilla.org), forums on [Discourse](https://discourse.mozilla.org/c/mdn/236), and discussions on [GitHub](https://github.com/mdn/mdn-community/discussions).
+You can communicate with the MDN Web Docs team and community using one or more of the following ways:
 
-- If you are learning web development and are stuck on a coding problem, we have [active forums](https://discourse.mozilla.org/c/mdn/learn/250) where you can ask questions and get help.
+- [Matrix channel](https://chat.mozilla.org/#/room/#mdn:mozilla.org)
+- Forums on [Discourse](https://discourse.mozilla.org/c/mdn/236). If you are learning web development and are stuck on a coding problem, we have [active forums](https://discourse.mozilla.org/c/mdn/learn/250) where you can ask questions and get help.
+- Discussions on [GitHub](https://github.com/mdn/mdn-community/discussions)
 
 <!-- Captured -->
 
 MDN Web Docs (previously known as MDN — the Mozilla Developer Network) is an evolving learning platform for Web technologies and the software that powers the Web, including [CSS](/en-US/docs/Web/CSS), [HTML](/en-US/docs/Web/HTML), and [JavaScript](/en-US/docs/Web/JavaScript). We also have a detailed set of beginner's learning material — see [Learn Web development](/en-US/docs/Learn).
-
