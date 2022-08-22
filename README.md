@@ -1,3 +1,5 @@
+**This repository is archived as of Aug 2022 - you can find current team projects in https://github.com/mdn/mdn**
+
 # MDN Web Docs Content Team Projects
 
 This is a holding repo for organising MDN Web Docs team projects & subsequent work.
